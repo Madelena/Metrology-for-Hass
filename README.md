@@ -19,6 +19,39 @@ Segoe UI font is optional if you are already using Windows. If you are not using
 
 TBD. Includes button-card templates in the form of Live Tiles.
 
+### Title Card
+
+
+### Header Card
+
+
+### Live Tile
+
+
+### Live Tile Card
+
+
+### Live Tile Media Player Card
+
+
+### Mini Graph Card
+
+
+### Light Group Card
+
+
+### Light Slider Card
+
+
+### Hue Scene Card and Card Mini
+
+
+### How to use wider Live Tiles
+
+
+### CSS Variables for your custom cards
+
+
 
 ## See Also
 
