@@ -14,7 +14,7 @@ Features:
 
 Prerequisites:
 
-- Modded frontend: to install custom themes
+- Modded `frontend:` to install custom themes
 - card-mod
 
 Segoe UI font is optional if you are already using Windows. If you are not using Home Assistant, you can download the fonts [here](https://docs.microsoft.com/en-us/windows/apps/design/downloads/#fonts) and upload them along with style.css to your /config/www folder.
