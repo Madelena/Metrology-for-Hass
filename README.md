@@ -3,9 +3,11 @@ A collection of themes, tweaks, and template buttons to make your Home Assistant
 
 ## Metro Theme
 
+Features:
+
 - Uses Segoe UI or Segoe UI Variable fonts with a distinct and bold typography.
-- Supports Light and Dark Modes.
-- Includes 4 Themes. Also adding new themes are relatively easy.
+- Supports Light and Dark Modes natively. Dark Mode has a true black background great for AMOLED screens.
+- Includes 4 Themes. Also adding new themes is relatively easy thanks to YAML Anchors.
 - Revamps the More Info card and various system UI screens.
 
 ### How to Install the Theme
