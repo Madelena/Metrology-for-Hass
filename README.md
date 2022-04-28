@@ -12,10 +12,29 @@ Features:
 
 ### How to Install the Theme
 
+If you have HACS, you probably already know what you are doing. You can search for this theme and install it there. If you don't have HACS, here are the steps:
+
 Prerequisites:
 
-- Modded `frontend:` to install custom themes
+- Some way to upload files to your HA server, e.g. Visual Studio Code or Samba add-ons
 - card-mod
+
+Installation:
+
+- Add this in your configuration.yaml file:
+
+```
+frontend:
+  themes: !include_dir_merge_named themes
+```
+
+- Create a new folder named `themes` under `/config`.
+- Copy `metro.yaml` to `/config/themes`.
+- (Optional if you want Segoe UI on non-Windows devices) Copy `style.css` and the `.ttf` font files to `/www`.
+- Restart Home Assistant to apply the changes.
+- Go to your Profile page, which is the button where your avatar is at the bottom left.
+- Under Themes, choose the color you like for the Metro themes.
+- Pick Auto, Light, or Dark Mode for the theme.
 
 Segoe UI font is optional if you are already using Windows. If you are not using Home Assistant, you can download the fonts [here](https://docs.microsoft.com/en-us/windows/apps/design/downloads/#fonts) and upload them along with style.css to your /config/www folder.
 
