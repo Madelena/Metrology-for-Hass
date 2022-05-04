@@ -1,6 +1,8 @@
 # Metrology for Home Assistant
 A collection of themes, tweaks, and template buttons to make your Home Assistant look modern and clean. Based on Metro UI Design System.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/madelena)
+
 ## Metro Theme
 
 Features:
