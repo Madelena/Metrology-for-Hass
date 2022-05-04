@@ -30,12 +30,6 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   disabled-text-color: "rgba(255,255,255,.55)"
   text-accent-color: var(--accent-text-color)
 
-  divider-color: transparent
-  disabled-color: "rgba(255,255,255,.55)"
-  rgb-disabled-color: "128,128,128"
-  error-color: "#FF4400"
-  rgb-error-color: "255,64,0"
-
   # Other Mode Specific Variables
   mdc-theme-surface: "rgb(24,24,24)"
   rgb-mdc-theme-surface: "24,24,24"
@@ -43,6 +37,17 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   dialog-backdrop-filter: none
   mdc-dialog-box-shadow: 0 0px 16px 4px rgba(var(--rgb-accent-color), .15), 0 16px 64px 32px rgba(var(--rgb-primary-color), .5)
   slider-thumb-color: "#121212"
+
+  # Main Interface Colors
+  divider-color: transparent
+  disabled-color: "rgba(255,255,255,.55)"
+  rgb-disabled-color: "128,128,128"
+  error-color: "#FF4400"
+  rgb-error-color: "255,64,0"
+  warning-color: "#ffa600"
+  success-color: "#008a17"
+  rgb-success-color: "0, 138, 23"
+  info-color: "#039be5"
 
   # Main Interface Colors
   lovelace-background: var(--primary-background-color)
@@ -91,7 +96,7 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   body-line-height: 1
   card-title-font-size: 1.5rem
   card-title-font-weight: 500
-  card-title-line-height: 1
+  card-title-line-height: 1.1
   title-font-size: 3.5rem
   subtitle-font-size: 1rem
   
@@ -101,6 +106,20 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   h4-font-size: 1.5rem
   h5-font-size: 1.15rem
   h6-font-size: .7rem
+
+  h1-font-weight: 100
+  h2-font-weight: 100
+  h3-font-weight: 100
+  h4-font-weight: 500
+  h5-font-weight: 400
+  h6-font-weight: 400
+
+  h1-font: var(--h1-font-weight) var(--h1-font-size) /var(--h1-line-height)
+  h2-font: var(--h2-font-weight) var(--h2-font-size) /var(--h2-line-height)
+  h3-font: var(--h3-font-weight) var(--h3-font-size) /var(--h3-line-height)
+  h4-font: var(--h4-font-weight) var(--h4-font-size) /var(--h4-line-height)
+  h5-font: var(--h5-font-weight) var(--h5-font-size) /var(--h5-line-height)
+  h6-font: var(--h6-font-weight) var(--h6-font-size) /var(--h6-line-height)
 
   paper-font-headline_-_font-size: 3.5rem
   paper-font-headline_-_font-weight: 500
@@ -132,6 +151,9 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   mdc-icon-size: 24px
   header-height: 56px
   mdc-shape-small: 0
+
+  expansion-panel-summary-padding: 0
+  expansion-panel-content-padding: 0
 
 
   # Color Reset
@@ -279,13 +301,17 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   mdc-dialog-box-shadow: 0 8px 16px 4px rgb(0 0 0 / 25%), 0 48px 64px 32px rgb(0 0 0 / 20%)
   slider-thumb-color: "#E8E8E8"
 
+  # Main Interface Colors
   divider-color: transparent
   disabled-color: "rgba(255,255,255,.55)"
   rgb-disabled-color: "128,128,128"
   error-color: "#FF4400"
   rgb-error-color: "255,64,0"
+  warning-color: "#ffa600"
+  success-color: "#008a17"
+  rgb-success-color: "0, 138, 23"
+  info-color: "#039be5"
 
-  # Main Interface Colors
   lovelace-background: var(--primary-background-color)
   ha-card-background: var(--card-background-color)
 
@@ -343,6 +369,20 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   h5-font-size: 1.15rem
   h6-font-size: .7rem
 
+  h1-font-weight: 100
+  h2-font-weight: 100
+  h3-font-weight: 100
+  h4-font-weight: 500
+  h5-font-weight: 400
+  h6-font-weight: 400
+
+  h1-font: var(--h1-font-weight) var(--h1-font-size) /var(--h1-line-height)
+  h2-font: var(--h2-font-weight) var(--h2-font-size) /var(--h2-line-height)
+  h3-font: var(--h3-font-weight) var(--h3-font-size) /var(--h3-line-height)
+  h4-font: var(--h4-font-weight) var(--h4-font-size) /var(--h4-line-height)
+  h5-font: var(--h5-font-weight) var(--h5-font-size) /var(--h5-line-height)
+  h6-font: var(--h6-font-weight) var(--h6-font-size) /var(--h6-line-height)
+
   paper-font-headline_-_font-size: 3.5rem
   paper-font-headline_-_font-weight: 500
   paper-font-headline_-_letter-spacing: 0
@@ -374,6 +414,9 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   mdc-icon-size: 24px
   header-height: 56px
   mdc-shape-small: 0
+
+  expansion-panel-summary-padding: 0
+  expansion-panel-content-padding: 0
 
 
   # Color Reset
@@ -505,17 +548,24 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
     }
     ha-card .value {
       font-size: var(--h1-font-size);
-      font-weight: 100;
+      font-weight: var(--h1-font-weight);
       margin-right: 0;
     }
     ha-card .name {
       font-size: var(--body-font-size);
-      line-height: 32px;
-      font-weight: 400;
+      line-height: var(--body-line-height);
+      font-weight: var(--body-font-weight);
       color: var(--primary-text-color);
     }
     ha-card .info {
       line-height: 32px;
+      padding-top: 8px;
+    }
+    ha-card .header {
+      padding-top: 16px !important;
+    }
+    .icon {
+      line-height: 16px !important;
     }
     ha-card .measurement {
       font-size: var(--h6-font-size);
@@ -525,8 +575,8 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
     }
     .card-header, .card-header .name {
       font-size: var(--card-title-font-size);
-      line-height: 32px;
-      font-weight: 500;
+      line-height: var(--card-title-line-height);
+      font-weight: var(--card-title-font-weight);
       letter-spacing: 0;
       margin-bottom: 8px;
     }
@@ -560,7 +610,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
       .state {
         margin-left: 46px !important;
         font-size: var(--h1-font-size);
-        font-weight: 100;
+        font-weight: var(--h1-font-weight);
         text-align: left !important;
         line-height: 1.1;
       }
@@ -592,7 +642,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
       .data-entry .value {
         text-align: left !important;
         font-size: var(--h2-font-size);
-        font-weight: 100;
+        font-weight: var(--h2-font-weight);
         line-height: 1.1;
         margin-bottom: 16px;
         max-width: none !important;
@@ -605,7 +655,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
       app-toolbar [main-title] {
         font-size: var(--h5-font-size);
         line-height: 1.1;
-        font-weight: 500;
+        font-weight: var(--h5-font-weight);
         text-transform: uppercase;
         margin-left: 8px !important;
       }
@@ -645,11 +695,12 @@ Metro Red:
 
   primary-color: "#C30052"
   rgb-primary-color: "195,0,82"
-  rgb-primary-color-darker: "102,0,42" #66002A
-  rgb-primary-color-lighter: "255,0,108" #FF006A
+  rgb-primary-color-darker: "144, 0, 60"
+  rgb-primary-color-lighter: "233, 0, 98"
+  hue-primary-color: "335deg"
 
-  accent-color: "#FF006A"
-  rgb-accent-color: "255,0,108"
+  accent-color: "#e90062"
+  rgb-accent-color: "233, 0, 98"
 
   card-mod-theme: "Metro Red"
   card-mod-row: *card-mod-row 
@@ -664,13 +715,14 @@ Metro Blue:
     dark: *metro-common-dark
     light: *metro-common-light
 
-  primary-color: "#0052C3"
-  rgb-primary-color: "0,82,195"
-  rgb-primary-color-darker: "0,42,102"
-  rgb-primary-color-lighter: "0,108,255"
+  primary-color: "#0078d7"
+  rgb-primary-color: "0,120,215"
+  rgb-primary-color-darker: "0,91,163"
+  rgb-primary-color-lighter: "0,141,253"
+  hue-primary-color: "207deg"
 
-  accent-color: "#006AFF"
-  rgb-accent-color: "0,108,255"
+  accent-color: "#008dfd"
+  rgb-accent-color: "0,141,253"
 
   card-mod-theme: "Metro Blue"
   card-mod-row: *card-mod-row 
@@ -685,13 +737,14 @@ Metro Green:
     dark: *metro-common-dark
     light: *metro-common-light
 
-  primary-color: "#00C352"
-  rgb-primary-color: "0,195,82"
-  rgb-primary-color-darker: "0,102,42"
-  rgb-primary-color-lighter: "0,255,108"
+  primary-color: "#00cb6a"
+  rgb-primary-color: "0, 203, 106"
+  rgb-primary-color-darker: "0, 151, 79"
+  rgb-primary-color-lighter: "0, 241, 125"
+  hue-primary-color: "151deg"
 
-  accent-color: "#00FF6A"
-  rgb-accent-color: "0,255,108"
+  accent-color: "#00f17d"
+  rgb-accent-color: "0, 241, 125"
 
   card-mod-theme: "Metro Green"
   card-mod-row: *card-mod-row 
@@ -706,13 +759,14 @@ Metro Orange:
     dark: *metro-common-dark
     light: *metro-common-light
 
-  primary-color: "#C35200"
-  rgb-primary-color: "195,82,0"
-  rgb-primary-color-darker: "102,42,0"
-  rgb-primary-color-lighter: "255,108,0"
+  primary-color: "#ff8c00"
+  rgb-primary-color: "255, 140, 0"
+  rgb-primary-color-darker: "204, 112, 0"
+  rgb-primary-color-lighter: "255, 157, 0"
+  hue-primary-color: "33deg"
 
-  accent-color: "#FF6A00"
-  rgb-accent-color: "255,108,0"
+  accent-color: "#ff9d00"
+  rgb-accent-color: "255, 157, 0"
 
   card-mod-theme: "Metro Orange"
   card-mod-row: *card-mod-row 
