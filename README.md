@@ -5,12 +5,25 @@ A collection of themes, tweaks, and template buttons to make your Home Assistant
 
 ## Metro Theme
 
-Features:
+![Collage of Screenshots showing the Metro theme in light and dark modes](/examples/HA%20Metrology%20-%20Metro%20Theme%20-%20Collage.png)
+
+### Features
 
 - Uses Segoe UI or Segoe UI Variable fonts with a distinct and bold typography.
 - Supports Light and Dark Modes natively. Dark Mode has a true black background great for AMOLED screens.
 - Includes 4 Themes. Also adding new themes is relatively easy thanks to YAML Anchors.
 - Revamps the More Info card and various system UI screens.
+
+### Screenshots
+
+|   |   |   |   |
+|--- | --- | ---| ---|
+| ![Red Theme (Light)](/examples/HA%20Metrology%20-%20Color%20Themes%20-%20Red%20(Light).png) | ![Orange Theme (Light)](/examples/HA%20Metrology%20-%20Color%20Themes%20-%20Orange%20(Light).png) | ![Green Theme (Light)](/examples/HA%20Metrology%20-%20Color%20Themes%20-%20Green%20(Light).png) | ![Blue Theme (Light)](/examples/HA%20Metrology%20-%20Color%20Themes%20-%20Blue%20(Light).png) |
+| ![Red Theme (Dark)](/examples/HA%20Metrology%20-%20Color%20Themes%20-%20Red%20(Dark).png) | ![Orange Theme (Dark)](/examples/HA%20Metrology%20-%20Color%20Themes%20-%20Orange%20(Dark).png) | ![Green Theme (Dark)](/examples/HA%20Metrology%20-%20Color%20Themes%20-%20Green%20(Dark).png) | ![Blue Theme (Dark)](/examples/HA%20Metrology%20-%20Color%20Themes%20-%20Blue%20(Dark).png) |
+| ![Device Example (Dark)](/examples/HA%20Metrology%20-%20Device%20Example%20(Dark).png) Device Example | ![Device Example (Light)](/examples/HA%20Metrology%20-%20Device%20Example%20(Light).png) Device Example | ![Binary Sensor Example (Dark)](/examples/HA%20Metrology%20-%20More%20Info%20Box%20Example%20-%20Binary%20Sensor%20(Dark).png) Binary Sensor Example | ![Device Example (Dark)](/examples/HA%20Metrology%20-%20More%20Info%20Box%20Example%20-%20Binary%20Sensor%20(Light).png) Binary Sensor Example | 
+| ![Update (Dark)](/examples/HA%20Metrology%20-%20More%20Info%20Box%20Example%20-%20Update%20(Dark).png) Update Example | ![Update (Light)](/examples/HA%20Metrology%20-%20More%20Info%20Box%20Example%20-%20Update%20(Light).png) Update Example | ![Sensor Example (Dark)](/examples/HA%20Metrology%20-%20More%20Info%20Box%20Example%20-%20Sensor%20(Dark).png) Sensor Example | ![Sensor Example (Dark)](/examples/HA%20Metrology%20-%20More%20Info%20Box%20Example%20-%20Sensor%20(Light).png) Sensor Example | 
+| ![Settings Example](/examples/HA%20Metrology%20-%20Settings%20Example%20(Light).png) Settings Example | | | |
+| | | |
 
 ### How to Install the Theme
 
