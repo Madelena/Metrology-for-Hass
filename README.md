@@ -10,6 +10,14 @@ Here is a collection of themes, tweaks, and template buttons to make your Home A
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/madelena)
 
+## Table of Contents
+
+- [Metro Theme](#metro-theme)
+  - [Screenshots](#screenshots)
+  - [How to Install the Theme](#how-to-install-the-theme)
+- [Live Tile Templates](#live-tile-templates)
+- [Credits](#credits)
+
 ## Metro Theme
 
 ### Awesome Features
@@ -64,9 +72,9 @@ frontend:
 
 Segoe UI font is optional if you are already using Windows. If you are not using Home Assistant, you can download the fonts [here](https://docs.microsoft.com/en-us/windows/apps/design/downloads/#fonts) and upload them along with style.css to your /config/www folder.
 
-## Card Templates
+## Live Tile Templates
 
-TBD. Includes button-card templates in the form of Live Tiles.
+TBD. Includes button-card templates in the form of Live Tiles. Watch this repo for updates.
 
 ### Title Card
 
@@ -102,8 +110,14 @@ TBD. Includes button-card templates in the form of Live Tiles.
 
 
 
-## See Also
 
-Metrology is a suite of themes inspired by Metro UI Design System to make your system look distinctively bold and clean.
 
-- [Metrology for Musicbee](https://github.com/Madelena/Metrology-for-Musicbee)
+## Credits
+
+![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+Additionally, I would appreciate proper credits back to me if redistributed or modified. That would help my livelihood since design is [my career](https://MadelenaMak.com).
+
+The initial code was partially based on the [JuanMTech's AMOLED Theme](https://community.home-assistant.io/t/amoled-blue-theme-juanmtech/164458).
