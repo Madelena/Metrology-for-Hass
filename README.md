@@ -16,12 +16,12 @@ Here is a collection of themes, tweaks, and template buttons to make your Home A
 
 <table>
   <tr width="50%">
-    <td>Uses Segoe UI or Segoe UI Variable fonts with a distinct and bold typography. <img alt="Typography" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%201.png"/></td>
-    <td>Supports Light and Dark Modes natively. Dark Mode has a true black background great for AMOLED screens. <img alt="Light and Dark Modes" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%202.png"/></td>
+    <td>Display your home automation status with distinct and bold typography using Segoe UI or Segoe UI Variable fonts. <img alt="Typography" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%201.png"/></td>
+    <td>Use Light and Dark Modes natively. Dark Mode has a true black background great for AMOLED screens. <img alt="Light and Dark Modes" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%202.png"/></td>
   </tr>
   <tr width="50%">
-    <td>Includes 4 Themes. Also adding new themes is relatively easy thanks to YAML Anchors. <img alt="Color Themes" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%203.png"/></td>
-    <td>Revamps the More Info card and various system UI screens to look extra clean and slick. <img alt="Systemwide Theming" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%204.png"/></td>
+    <td>Switch between 4 color themes. Also adding new themes is relatively easy thanks to YAML Anchors. <img alt="Color Themes" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%203.png"/></td>
+    <td>Revamp your More Info cards and various system UI screens to look extra clean and slick. <img alt="Systemwide Theming" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%204.png"/></td>
   </tr>
 </table>
 
