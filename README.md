@@ -1,5 +1,7 @@
 # Metrology for Home Assistant
 
+![Collage of Screenshots showing the Metro theme in light and dark modes](https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/HA%20Metrology%20-%20Metro%20Theme%20-%20Collage.png)
+
 Metrology is a practical series of app customizations and redesigns aimed at bringing a bold, clear, and consistent user experience to [various Windows and Android apps](https://github.com/Madelena?tab=repositories&q=Metrology). Its design language is based on [Metro](https://en.wikipedia.org/wiki/Metro_(design_language)) and [Fluent](https://www.microsoft.com/design/fluent/) design systems pioneered by Microsoft Design since the 2010s.
 
 [Home Assistant](https://www.home-assistant.io/) is an open source home automation server that integrates nearly 2000 existing IoT services into one powerful, private, and unified user interface. It is perfect to run on a Raspberry Pi or a local server.
@@ -9,8 +11,6 @@ Here is a collection of themes, tweaks, and template buttons to make your Home A
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/madelena)
 
 ## Metro Theme
-
-![Collage of Screenshots showing the Metro theme in light and dark modes](https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/HA%20Metrology%20-%20Metro%20Theme%20-%20Collage.png)
 
 ### Features
 
