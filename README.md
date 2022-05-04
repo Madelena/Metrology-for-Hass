@@ -1,6 +1,6 @@
-# Metrology for Home Assistant
-
 ![Collage of Screenshots showing the Metro theme in light and dark modes](https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/HA%20Metrology%20-%20Metro%20Theme%20-%20Collage.png)
+
+# Metrology for Home Assistant
 
 Metrology is a practical series of app customizations and redesigns aimed at bringing a bold, clear, and consistent user experience to [various Windows and Android apps](https://github.com/Madelena?tab=repositories&q=Metrology). Its design language is based on [Metro](https://en.wikipedia.org/wiki/Metro_(design_language)) and [Fluent](https://www.microsoft.com/design/fluent/) design systems pioneered by Microsoft Design since the 2010s.
 
@@ -10,14 +10,28 @@ Here is a collection of themes, tweaks, and template buttons to make your Home A
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/madelena)
 
+## Table of Contents
+
+- [Metro Theme](#metro-theme)
+  - [Screenshots](#screenshots)
+  - [How to Install the Theme](#how-to-install-the-theme)
+- [Live Tile Templates](#live-tile-templates)
+- [Credits](#credits)
+
 ## Metro Theme
 
-### Features
+### Awesome Features
 
-- Uses Segoe UI or Segoe UI Variable fonts with a distinct and bold typography.
-- Supports Light and Dark Modes natively. Dark Mode has a true black background great for AMOLED screens.
-- Includes 4 Themes. Also adding new themes is relatively easy thanks to YAML Anchors.
-- Revamps the More Info card and various system UI screens.
+<table>
+  <tr width="50%">
+    <td>Display your home automation status with distinct and bold typography using Segoe UI or Segoe UI Variable fonts. <img alt="Typography" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%201.png"/></td>
+    <td>Use Light and Dark Modes natively. Dark Mode has a true black background great for AMOLED screens. <img alt="Light and Dark Modes" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%202.png"/></td>
+  </tr>
+  <tr width="50%">
+    <td>Switch between 4 color themes. Also adding new themes is relatively easy thanks to YAML Anchors. <img alt="Color Themes" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%203.png"/></td>
+    <td>Revamp your More Info cards and various system UI screens to look extra clean and slick. <img alt="Systemwide Theming" src="https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Metro%20Theme%20Thumbnail%204.png"/></td>
+  </tr>
+</table>
 
 ### Screenshots
 
@@ -58,9 +72,9 @@ frontend:
 
 Segoe UI font is optional if you are already using Windows. If you are not using Home Assistant, you can download the fonts [here](https://docs.microsoft.com/en-us/windows/apps/design/downloads/#fonts) and upload them along with style.css to your /config/www folder.
 
-## Card Templates
+## Live Tile Templates
 
-TBD. Includes button-card templates in the form of Live Tiles.
+TBD. Includes button-card templates in the form of Live Tiles. Watch this repo for updates.
 
 ### Title Card
 
@@ -96,8 +110,14 @@ TBD. Includes button-card templates in the form of Live Tiles.
 
 
 
-## See Also
 
-Metrology is a suite of themes inspired by Metro UI Design System to make your system look distinctively bold and clean.
 
-- [Metrology for Musicbee](https://github.com/Madelena/Metrology-for-Musicbee)
+## Credits
+
+![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+Additionally, I would appreciate proper credits back to me if redistributed or modified. That would help my livelihood since design is [my career](https://MadelenaMak.com).
+
+The initial code was partially based on the [JuanMTech's AMOLED Theme](https://community.home-assistant.io/t/amoled-blue-theme-juanmtech/164458).
