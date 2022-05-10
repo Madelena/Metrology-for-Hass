@@ -10,6 +10,8 @@ Here is a collection of themes, tweaks, and template buttons to make your Home A
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/madelena)
 
+**Discuss on [Home Assistant Community](https://community.home-assistant.io/t/metrology-metro-fluent-windows-themes-for-home-assistant/419530) or [Reddit](https://www.reddit.com/r/homeassistant/comments/ui1uga/theme_metrology_metro_fluent_windows_themes_for/)**
+
 ## Table of Contents
 
 - [Metro Theme](#metro-theme)
