@@ -587,7 +587,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
     $: |
       .mdc-dialog__surface {
         backdrop-filter: blur(8px);
-        background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
+        background-color: rgba(var(--rgb-mdc-theme-surface), 1.0) !important;
       }
     ha-header-bar$: |
       .mdc-top-app-bar {
