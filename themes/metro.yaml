@@ -140,7 +140,7 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
 
   # Layout
   ha-card-border-radius: "0"
-  masonry-view-card-margin: "1px"
+  masonry-view-card-margin: "2px"
   grid-card-gap: "2px"
   stack-card-margin: "1px"
 
@@ -403,7 +403,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   # Layout
   ha-card-border-radius: "4px"
   ha-dialog-border-radius: "8px"
-  masonry-view-card-margin: "1px"
+  masonry-view-card-margin: "2px"
   grid-card-gap: "2px"
   stack-card-margin: "1px"
 
