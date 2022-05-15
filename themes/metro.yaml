@@ -15,6 +15,7 @@
 ________________________________Metro Dark Common Attributes (DO NOT USE): &metro-common-dark
   # Background Colors
   primary-background-color: "rgb(0,0,0)"
+  rgb-primary-background-color: "0,0,0"
   secondary-background-color: "rgb(24,24,24)"
   card-background-color: "rgba(255,255,255,.075)"
   rgb-card-background-color: "255,255,255"
@@ -53,7 +54,7 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   lovelace-background: var(--primary-background-color)
   ha-card-background: var(--card-background-color)
 
-  app-header-background-color: "rgba(0,0,0,.33)"
+  app-header-background-color: "rgba(var(--rgb-primary-background-color),.33)"
   app-header-text-color: var(--primary-text-color)
   app-header-selection-bar-color: var(--primary-color)
   app-header-edit-background-color: rgb(var(--rgb-primary-color-darker))
@@ -114,12 +115,14 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   h5-font-weight: 400
   h6-font-weight: 400
 
-  h1-font: var(--h1-font-weight) var(--h1-font-size) /var(--h1-line-height)
-  h2-font: var(--h2-font-weight) var(--h2-font-size) /var(--h2-line-height)
-  h3-font: var(--h3-font-weight) var(--h3-font-size) /var(--h3-line-height)
-  h4-font: var(--h4-font-weight) var(--h4-font-size) /var(--h4-line-height)
-  h5-font: var(--h5-font-weight) var(--h5-font-size) /var(--h5-line-height)
-  h6-font: var(--h6-font-weight) var(--h6-font-size) /var(--h6-line-height)
+  body-font: "var(--body-font-weight) var(--body-font-size) var(--font-stack)"
+  card-title-font: "var(--card-title-font-weight) var(--card-title-font-size) var(--display-font-stack)"
+  h1-font: "var(--h1-font-weight) var(--h1-font-size) var(--display-font-stack)"
+  h2-font: "var(--h2-font-weight) var(--h2-font-size) var(--display-font-stack)"
+  h3-font: "var(--h3-font-weight) var(--h3-font-size) var(--display-font-stack)"
+  h4-font: "var(--h4-font-weight) var(--h4-font-size) var(--display-font-stack)"
+  h5-font: "var(--h5-font-weight) var(--h5-font-size) var(--font-stack)"
+  h6-font: "var(--h6-font-weight) var(--h6-font-size) var(--font-stack)"
 
   paper-font-headline_-_font-size: 3.5rem
   paper-font-headline_-_font-weight: 500
@@ -155,6 +158,16 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   expansion-panel-summary-padding: 0
   expansion-panel-content-padding: 0
 
+  mush-badge-size: 16px
+  mush-badge-icon-size: 10px
+  mush-button-size: 32px
+  mush-button-icon-size: 20px
+  mush-shape-size: 48px
+  mush-shape-avatar-size: 48px
+  mush-shape-icon-size: 20px
+  #mush-shape-animation:
+  mush-slider-height: 16px
+
 
   # Color Reset
   # Map all the colors to the defaults above
@@ -177,7 +190,7 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   paper-slider-knob-start-color: var(--paper-slider-knob-color)
   paper-slider-pin-color: var(--paper-slider-knob-color)
   paper-slider-active-color: var(--paper-slider-knob-color)
-  paper-slider-secondary-color: var(--light-primary-color)
+  paper-slider-secondary-color: rgb(var(--rgb-primary-color-darker))
 
   # Labels
   label-badge-background-color: var(--primary-background-color)
@@ -195,10 +208,17 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
 
   # Switches
   switch-checked-button-color: var(--primary-color)
-  switch-checked-track-color: var(--primary-background-color)
-  switch-unchecked-button-color: var(--secondary-background-color)
-  switch-unchecked-track-color: var(--primary-background-color)
-  mdc-radio-unchecked-color: var(--secondary-text-color)
+  switch-checked-track-color: var(--primary-text-color)
+  switch-unchecked-button-color: rgb(var(--rgb-primary-color-darker))
+  switch-unchecked-track-color: var(--primary-text-color)
+  mdc-radio-unchecked-color: var(--primary-text-color)
+
+  # Color Picker
+  ha-color-picker-wheel-borderwidth: 4
+  ha-color-picker-wheel-bordercolor: var(--primary-text-color)
+  ha-color-picker-wheel-shadow: none
+  ha-color-picker-marker-borderwidth: 4
+  ha-color-picker-marker-bordercolor: var(--accent-text-color)
 
   # Toggles
   paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
@@ -278,6 +298,7 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
 ________________________________Metro Light Common Attributes (DO NOT USE): &metro-common-light
   # Background Colors
   primary-background-color: "rgb(255,255,255)"
+  rgb-primary-background-color: "255,255,255"
   secondary-background-color: "rgb(232,232,232)"
   card-background-color: "rgba(0,0,0,.033)"
   rgb-card-background-color: "0,0,0"
@@ -315,7 +336,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   lovelace-background: var(--primary-background-color)
   ha-card-background: var(--card-background-color)
 
-  app-header-background-color: "rgb(255,255,255,.33)"
+  app-header-background-color: "rgba(var(--rgb-primary-background-color),.33)"
   app-header-text-color: var(--primary-text-color)
   app-header-selection-bar-color: var(--primary-color)
   app-header-edit-background-color: rgb(var(--rgb-primary-color-darker))
@@ -376,12 +397,14 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   h5-font-weight: 400
   h6-font-weight: 400
 
-  h1-font: var(--h1-font-weight) var(--h1-font-size) /var(--h1-line-height)
-  h2-font: var(--h2-font-weight) var(--h2-font-size) /var(--h2-line-height)
-  h3-font: var(--h3-font-weight) var(--h3-font-size) /var(--h3-line-height)
-  h4-font: var(--h4-font-weight) var(--h4-font-size) /var(--h4-line-height)
-  h5-font: var(--h5-font-weight) var(--h5-font-size) /var(--h5-line-height)
-  h6-font: var(--h6-font-weight) var(--h6-font-size) /var(--h6-line-height)
+  body-font: "var(--body-font-weight) var(--body-font-size) var(--font-stack)"
+  card-title-font: "var(--card-title-font-weight) var(--card-title-font-size) var(--display-font-stack)"
+  h1-font: "var(--h1-font-weight) var(--h1-font-size) var(--display-font-stack)"
+  h2-font: "var(--h2-font-weight) var(--h2-font-size) var(--display-font-stack)"
+  h3-font: "var(--h3-font-weight) var(--h3-font-size) var(--display-font-stack)"
+  h4-font: "var(--h4-font-weight) var(--h4-font-size) var(--display-font-stack)"
+  h5-font: "var(--h5-font-weight) var(--h5-font-size) var(--font-stack)"
+  h6-font: "var(--h6-font-weight) var(--h6-font-size) var(--font-stack)"
 
   paper-font-headline_-_font-size: 3.5rem
   paper-font-headline_-_font-weight: 500
@@ -418,6 +441,16 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   expansion-panel-summary-padding: 0
   expansion-panel-content-padding: 0
 
+  mush-badge-size: 16px
+  mush-badge-icon-size: 10px
+  mush-button-size: 32px
+  mush-button-icon-size: 20px
+  mush-shape-size: 48px
+  mush-shape-avatar-size: 48px
+  mush-shape-icon-size: 20px
+  #mush-shape-animation:
+  mush-slider-height: 16px
+
 
   # Color Reset
   # Map all the colors to the defaults above
@@ -440,7 +473,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   paper-slider-knob-start-color: var(--paper-slider-knob-color)
   paper-slider-pin-color: var(--paper-slider-knob-color)
   paper-slider-active-color: var(--paper-slider-knob-color)
-  paper-slider-secondary-color: var(--light-primary-color)
+  paper-slider-secondary-color: rgb(var(--rgb-primary-color-darker))
 
   # Labels
   label-badge-background-color: var(--primary-background-color)
@@ -458,10 +491,17 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
 
   # Switches
   switch-checked-button-color: var(--primary-color)
-  switch-checked-track-color: var(--primary-background-color)
-  switch-unchecked-button-color: var(--secondary-background-color)
-  switch-unchecked-track-color: var(--primary-background-color)
-  mdc-radio-unchecked-color: var(--secondary-text-color)
+  switch-checked-track-color: var(--primary-text-color)
+  switch-unchecked-button-color: rgb(var(--rgb-primary-color-darker))
+  switch-unchecked-track-color: var(--primary-text-color)
+  mdc-radio-unchecked-color: var(--primary-text-color)
+
+  # Color Picker
+  ha-color-picker-wheel-borderwidth: 4
+  ha-color-picker-wheel-bordercolor: var(--primary-text-color)
+  ha-color-picker-wheel-shadow: none
+  ha-color-picker-marker-borderwidth: 4
+  ha-color-picker-marker-bordercolor: var(--accent-text-color)
 
   # Toggles
   paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
@@ -578,7 +618,10 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
       line-height: var(--card-title-line-height);
       font-weight: var(--card-title-font-weight);
       letter-spacing: 0;
+    }
+    .card-header {
       margin-bottom: 8px;
+      padding: 16px;
     }
     :host ::slotted(.card-content:not(:first-child)), slot:not(:first-child)::slotted(.card-content) {
       margin-top: 0;
@@ -586,7 +629,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   card-mod-more-info-yaml: &card-mod-more-info-yaml |
     $: |
       .mdc-dialog__surface {
-        backdrop-filter: blur(8px);
+        backdrop-filter: blur(16px);
         background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
       }
     ha-header-bar$: |
@@ -604,7 +647,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
         margin-left: -6px;
       }
       .content {
-        # margin-top: -8px;
+        xmargin-top: -8px;
       }
     state-card-display$: |
       .state {
@@ -646,6 +689,16 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
         line-height: 1.1;
         margin-bottom: 16px;
         max-width: none !important;
+      }
+    ha-more-info-history$state-history-charts:
+      $:
+        state-history-chart-timeline$: |
+          .chartTooltip {
+            margin-top: -200px;
+          }
+    ha-more-info-history$: |
+      state-history-charts {
+        filter: hue-rotate(115deg) saturate(3) brightness(0.66)
       }
   card-mod-root-yaml: &card-mod-root |
     .: |
