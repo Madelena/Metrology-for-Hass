@@ -93,7 +93,7 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   # Body at 14px = 10.5pt = 1rem
   body-font-size: 1rem
   body-font-weight: normal
-  body-line-height: 1.5
+  body-line-height: 1
   card-title-font-size: 1.5rem
   card-title-font-weight: 500
   card-title-line-height: 1.1
@@ -355,7 +355,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   # Body at 14px = 10.5pt = 1rem
   body-font-size: 1rem
   body-font-weight: normal
-  body-line-height: 1.5
+  body-line-height: 1
   card-title-font-size: 1.5rem
   card-title-font-weight: 500
   card-title-line-height: 1
@@ -587,7 +587,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
     $: |
       .mdc-dialog__surface {
         backdrop-filter: blur(8px);
-        background-color: rgba(var(--rgb-mdc-theme-surface), 1.0) !important;
+        background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
       }
     ha-header-bar$: |
       .mdc-top-app-bar {
