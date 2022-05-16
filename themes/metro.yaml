@@ -701,10 +701,6 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
           .chartTooltip {
             margin-top: -200px;
           }
-    ha-more-info-history$: |
-      state-history-charts {
-        filter: hue-rotate(115deg) saturate(3) brightness(0.66)
-      }
   card-mod-root-yaml: &card-mod-root |
     .: |
       app-header, app-toolbar {
