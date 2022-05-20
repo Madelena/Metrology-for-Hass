@@ -168,6 +168,22 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   #mush-shape-animation:
   mush-slider-height: 16px
 
+  # Animated weather icons
+  weather-icon-clear-night: url("/hacsfiles/themes/metro/icons/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/metro/icons/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/metro/icons/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/metro/icons/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/metro/icons/lightning.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/metro/icons/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/metro/icons/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/metro/icons/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/metro/icons/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/metro/icons/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/metro/icons/hail.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/metro/icons/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/metro/icons/cloudy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/metro/icons/partlycloudy.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/metro/icons/exceptional.svg")
 
   # Color Reset
   # Map all the colors to the defaults above
@@ -451,6 +467,22 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   #mush-shape-animation:
   mush-slider-height: 16px
 
+  # Animated weather icons
+  weather-icon-clear-night: url("/hacsfiles/themes/metro/icons/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/metro/icons/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/metro/icons/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/metro/icons/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/metro/icons/lightning.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/metro/icons/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/metro/icons/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/metro/icons/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/metro/icons/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/metro/icons/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/metro/icons/hail.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/metro/icons/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/metro/icons/cloudy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/metro/icons/partlycloudy.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/metro/icons/exceptional.svg")
 
   # Color Reset
   # Map all the colors to the defaults above
