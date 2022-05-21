@@ -127,3 +127,5 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 Additionally, I would appreciate proper credits back to me if redistributed or modified. That would help my livelihood since design is [my career](https://MadelenaMak.com).
 
 The initial code was partially based on the [JuanMTech's AMOLED Theme](https://community.home-assistant.io/t/amoled-blue-theme-juanmtech/164458).
+
+ Animated weather icons by: [amCharts](https://www.amcharts.com/free-animated-svg-weather-icons/)
