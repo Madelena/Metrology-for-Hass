@@ -833,3 +833,23 @@ Metro Orange:
   card-mod-root-yaml: *card-mod-root
   card-mod-view: *card-mod-view
 
+Metro Purple:
+  modes:
+    dark: *metro-common-dark
+    light: *metro-common-light
+
+  primary-color: "#6a00cb"
+  rgb-primary-color: "106, 0, 203"
+  rgb-primary-color-darker: "105, 0, 204"
+  rgb-primary-color-lighter: "169, 77, 255"
+  hue-primary-color: "151deg"
+
+  accent-color: "#A94DFF"
+  rgb-accent-color: "169, 77, 255"
+
+  card-mod-theme: "Metro Purple"
+  card-mod-row: *card-mod-row
+  card-mod-card: *card-mod-card
+  card-mod-more-info-yaml: *card-mod-more-info-yaml
+  card-mod-root-yaml: *card-mod-root
+  card-mod-view: *card-mod-view
