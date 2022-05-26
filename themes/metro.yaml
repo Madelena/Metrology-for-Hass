@@ -54,7 +54,7 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   lovelace-background: var(--primary-background-color)
   ha-card-background: var(--card-background-color)
 
-  app-header-background-color: "rgba(var(--rgb-primary-background-color),.33)"
+  app-header-background-color: "rgba(var(--rgb-primary-background-color),1)"
   app-header-text-color: var(--primary-text-color)
   app-header-selection-bar-color: var(--primary-color)
   app-header-edit-background-color: rgb(var(--rgb-primary-color-darker))
@@ -97,7 +97,7 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   body-line-height: normal
   card-title-font-size: 1.5rem
   card-title-font-weight: 500
-  card-title-line-height: 1.1
+  card-title-line-height: normal
   title-font-size: 3.5rem
   subtitle-font-size: 1rem
   
@@ -142,10 +142,12 @@ ________________________________Metro Dark Common Attributes (DO NOT USE): &metr
   mush-chip-font-weight: normal
 
   # Layout
-  ha-card-border-radius: "0"
-  masonry-view-card-margin: "2px"
+  ha-card-border-radius: 0
+  ha-config-card-border-radius: 0
+  masonry-view-card-margin: "2px 1px"
   grid-card-gap: "2px"
   stack-card-margin: "1px"
+  horizontal-stack-card-margin: "1px"
 
   mush-spacing: 16px
   mush-icon-border-radius: 32px
@@ -336,7 +338,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   lovelace-background: var(--primary-background-color)
   ha-card-background: var(--card-background-color)
 
-  app-header-background-color: "rgba(var(--rgb-primary-background-color),.33)"
+  app-header-background-color: "rgba(var(--rgb-primary-background-color),1)"
   app-header-text-color: var(--primary-text-color)
   app-header-selection-bar-color: var(--primary-color)
   app-header-edit-background-color: rgb(var(--rgb-primary-color-darker))
@@ -379,7 +381,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   body-line-height: normal
   card-title-font-size: 1.5rem
   card-title-font-weight: 500
-  card-title-line-height: 1
+  card-title-line-height: normal
   title-font-size: 3.5rem
   subtitle-font-size: 1rem
   
@@ -425,10 +427,13 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
 
   # Layout
   ha-card-border-radius: "4px"
+  ha-config-card-border-radius: "4px"
   ha-dialog-border-radius: "8px"
-  masonry-view-card-margin: "2px"
+  masonry-view-card-margin: "2px 1px"
   grid-card-gap: "2px"
   stack-card-margin: "1px"
+  horizontal-stack-card-margin: "1px"
+  vertical-stack-card-margin: "1px"
 
   mush-spacing: 16px
   mush-icon-border-radius: 32px
@@ -569,7 +574,7 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
   swiper-theme-color: var(--primary-color)
 
   # Custom
-  dark-mode-filter: "invert(1) hue-rotate(.5turn)"
+  dark-mode-filter: "invert(0)"
 
 
   # Card Mod
@@ -621,20 +626,18 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
     }
     .card-header {
       margin-bottom: 8px;
-      padding: 16px;
+      padding: 12px 16px;
     }
     :host ::slotted(.card-content:not(:first-child)), slot:not(:first-child)::slotted(.card-content) {
       margin-top: 0;
     }
   card-mod-more-info-yaml: &card-mod-more-info-yaml |
     $: |
-      .mdc-dialog__surface {
-        backdrop-filter: blur(16px);
-        background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
-      }
-      @-moz-document url-prefix() {
+      @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
         .mdc-dialog__surface {
-          background-color: rgba(var(--rgb-mdc-theme-surface), 1.0) !important;
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
         }
       }
     ha-header-bar$: |
@@ -701,14 +704,25 @@ ________________________________Metro Light Common Attributes (DO NOT USE): &met
           .chartTooltip {
             margin-top: -200px;
           }
-    ha-more-info-history$: |
-      state-history-charts {
-        filter: hue-rotate(115deg) saturate(3) brightness(0.66)
-      }
+    ha-more-info-history:
+      $:
+        state-history-charts:
+          $:
+            state-history-chart-line:
+              $:
+                ha-chart-base:
+                  $: |
+                    .chartContainer {
+                      filter: hue-rotate(var(--hue-primary-color)) saturate(3) brightness(0.66)
+                    }
   card-mod-root-yaml: &card-mod-root |
     .: |
-      app-header, app-toolbar {
-        backdrop-filter: blur(8px);
+      @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        app-header, app-toolbar {
+          background-color: "rgba(var(--rgb-primary-background-color),.33)"
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+        }
       }
       app-toolbar [main-title] {
         font-size: var(--h5-font-size);
@@ -833,6 +847,7 @@ Metro Orange:
   card-mod-root-yaml: *card-mod-root
   card-mod-view: *card-mod-view
 
+
 Metro Purple:
   modes:
     dark: *metro-common-dark
@@ -842,7 +857,7 @@ Metro Purple:
   rgb-primary-color: "106, 0, 203"
   rgb-primary-color-darker: "105, 0, 204"
   rgb-primary-color-lighter: "169, 77, 255"
-  hue-primary-color: "151deg"
+  hue-primary-color: "271deg"
 
   accent-color: "#A94DFF"
   rgb-accent-color: "169, 77, 255"
@@ -853,3 +868,4 @@ Metro Purple:
   card-mod-more-info-yaml: *card-mod-more-info-yaml
   card-mod-root-yaml: *card-mod-root
   card-mod-view: *card-mod-view
+
