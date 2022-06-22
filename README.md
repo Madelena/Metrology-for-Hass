@@ -8,9 +8,11 @@ Metrology is a practical series of app customizations and redesigns aimed at bri
 
 Here is a collection of themes, tweaks, and template buttons to make your Home Assistant look bold, modern, and clean.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/madelena)
+**Discuss this theme on [Home Assistant Community](https://community.home-assistant.io/t/metrology-metro-fluent-windows-themes-for-home-assistant/419530) or [Reddit](https://www.reddit.com/r/homeassistant/comments/ui1uga/theme_metrology_metro_fluent_windows_themes_for/).**
 
-**Discuss on [Home Assistant Community](https://community.home-assistant.io/t/metrology-metro-fluent-windows-themes-for-home-assistant/419530) or [Reddit](https://www.reddit.com/r/homeassistant/comments/ui1uga/theme_metrology_metro_fluent_windows_themes_for/)**
+To check out what this theme is capable of, check out my [Home Assistant config](https://github.com/Madelena/hass-config-public).
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/madelena)
 
 ## Table of Contents
 
