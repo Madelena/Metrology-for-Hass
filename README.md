@@ -52,29 +52,37 @@ To check out what this theme is capable of, check out my [Home Assistant config]
 
 If you have HACS, you probably already know what you are doing. You can search for this theme and install it there. If you don't have HACS, here are the steps:
 
-Prerequisites:
+#### Prerequisites
 
 - Some way to upload files to your HA server, e.g. Visual Studio Code or Samba add-ons
 - card-mod
 
-Installation:
+#### Installation
 
-- Add this in your configuration.yaml file:
-
-```
-frontend:
-  themes: !include_dir_merge_named themes
-```
-
-1. Create a new folder named `themes` under `/config`.
-2. Copy [`metro.yaml`](/themes/metro.yaml) to `/config/themes`.
-3. (Optional if you want Segoe UI on non-Windows devices) Copy [`style.css`](/www) and the `.ttf` font files to `/www`.
-4. Restart Home Assistant to apply the changes.
-5. Go to your Profile page, which is the button where your avatar is at the bottom left.
-6. Under Themes, choose the color you like for the Metro themes.
-7. Pick Auto, Light, or Dark Mode for the theme.
+1. If you are new to Home Assistant and its themes, you first need to add this in your configuration.yaml file:
+  ```yaml
+  frontend:
+    themes: !include_dir_merge_named themes
+  ```
+2. Create a new folder named `themes` under `/config`.
+3. Copy [`metro.yaml`](/themes/metro.yaml) to `/config/themes`.
+4. (Optional if you want Segoe UI on non-Windows devices) Copy [`style.css`](/www) and the `.ttf` font files to `/www`.
+  - If you are using the Lovelace Dashboard not in YAML mode, go to your Home Assistant Settings -> Dashboards -> Resources and then add `/local/style.css` as a Stylesheet.
+    (Note: It might look strange that you had copied the files to `/www` but here you typed `/local`, but HA will handle the path redirection for you so no worries.)
+  - If you are using it in YAML mode, add the following to your lovelace resources section:
+    ```yaml
+      lovelace:
+        mode: yaml
+        resources:
+          - url: /local/style.css
+            type: css
+    ```
+5. Restart Home Assistant to apply the changes. Once restarted, go to your Profile page, which is the button where your avatar is at the bottom left.
 
 ![Installation Instructions](https://raw.githubusercontent.com/Madelena/Metrology-for-Hass/main/examples/Installation%20Instructions.png)
+
+6. Under Themes, choose the color you like for the Metro themes.
+7. Pick Auto, Light, or Dark Mode for the theme.
 
 Segoe UI font is optional if you are already using Windows. If you are not using Home Assistant, you can download the fonts [here](https://docs.microsoft.com/en-us/windows/apps/design/downloads/#fonts) and upload them along with style.css to your /config/www folder.
 
