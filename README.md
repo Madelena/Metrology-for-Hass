@@ -66,7 +66,7 @@ If you have HACS, you probably already know what you are doing. You can search f
   ```
 2. Create a new folder named `themes` under `/config`.
 3. Copy [`metro.yaml`](/themes/metro.yaml) to `/config/themes`.
-4. (Optional if you want Segoe UI on non-Windows devices) Copy [`style.css`](/www) and the `.ttf` font files to `/www`.
+4. (Optional if you want Segoe UI on non-Windows devices) Copy [`style.css`](/www) and the `.ttf` font files in the `/www` folder to `/config/www`.
   - If you are using the Lovelace Dashboard not in YAML mode, go to your Home Assistant Settings -> Dashboards -> Resources and then add `/local/style.css` as a Stylesheet.
     (Note: It might look strange that you had copied the files to `/www` but here you typed `/local`, but HA will handle the path redirection for you so no worries.)
   - If you are using it in YAML mode, add the following to your lovelace resources section:
