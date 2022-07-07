@@ -24,7 +24,7 @@ To check out what this theme is capable of, check out my [Home Assistant config]
 - [Live Tile Templates](#live-tile-templates)
 - [Credits](#credits)
 
-## Metro Theme
+## Metro + Fluent Themes
 
 ### Awesome Features
 
@@ -34,7 +34,7 @@ To check out what this theme is capable of, check out my [Home Assistant config]
     <td>Use Light and Dark Modes natively. Dark Mode has a true black background great for AMOLED screens. <img alt="Light and Dark Modes" src="https://user-images.githubusercontent.com/4341881/177691336-ba4a0aa4-daff-44af-8ed5-9661367e460b.png"/></td>
   </tr>
   <tr width="50%">
-    <td>Switch between 4 color themes. Also adding new themes is relatively easy thanks to YAML Anchors. <img alt="Color Themes" src="https://user-images.githubusercontent.com/4341881/177691338-82039962-61a9-4b4a-a366-5ae90d932c2f.png"/></td>
+    <td>Switch between 6 color themes. Also adding new themes is relatively easy thanks to YAML Anchors. <img alt="Color Themes" src="https://user-images.githubusercontent.com/4341881/177691338-82039962-61a9-4b4a-a366-5ae90d932c2f.png"/></td>
     <td>Revamp your More Info cards and various system UI screens to look extra clean and slick. <img alt="Systemwide Theming" src="https://user-images.githubusercontent.com/4341881/177691339-a91d58bf-dc01-4f1e-b35f-7478b4dafe61.png"/></td>
   </tr>
 </table>
