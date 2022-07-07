@@ -14,6 +14,8 @@ To check out what this theme is capable of, check out my [Home Assistant config]
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/madelena)
 
+**✨ Thank you @legovaer and @pbohannon for your generous support! ✨**
+
 ## Table of Contents
 
 - [Metro Theme](#metro-theme)
