@@ -1,4 +1,4 @@
-![Collage of Screenshots showing the Metro theme in light and dark modes](https://user-images.githubusercontent.com/4341881/177691320-80597b03-cbac-434e-8242-7101cf80c6d0.png)
+![Collage of Screenshots showing the Metro theme in light and dark modes](https://user-images.githubusercontent.com/4341881/177700070-4b96ae79-a9d4-49fd-b373-9afc4b69415d.png)
 
 # Metrology for Home Assistant
 
