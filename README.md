@@ -31,9 +31,13 @@ Two styles are included in this theme:
 <table>
   <tr width="50%">
     <td valign="top">
-<b>Metro</b> style has a more vibrant color contrast, sharp corners, and a true black background great for AMOLED screens. Based on the design of Windows 10.<img alt="Metro style example" src="https://user-images.githubusercontent.com/4341881/177698759-1770e1a0-eff4-4f3a-aee3-4643733c450c.png"/></td>
+      <img alt="Metro style example" src="https://user-images.githubusercontent.com/4341881/177698759-1770e1a0-eff4-4f3a-aee3-4643733c450c.png"/>
+      <b>Metro</b> style has a more vibrant color contrast, sharp corners, and a true black background great for AMOLED screens. Based on the design of Windows 10.
+    </td>
     <td valign="top">
-<b>Fluent</b> style has subtle shades of colors, rounded corners, and background colors adjusted to be easy on eyes. Based on the design of Windows 11.<img alt="Fluent style example" src="https://user-images.githubusercontent.com/4341881/177698757-b9bffe0e-e9cc-4fb3-8dca-1d07936ec2f7.png"/></td>
+      <img alt="Fluent style example" src="https://user-images.githubusercontent.com/4341881/177698757-b9bffe0e-e9cc-4fb3-8dca-1d07936ec2f7.png"/>
+      <b>Fluent</b> style has subtle shades of colors, rounded corners, and background colors adjusted to be easy on eyes. Based on the design of Windows 11.  
+    </td>
   </tr>
 </table>
 
