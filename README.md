@@ -26,16 +26,31 @@ To check out what this theme is capable of, check out my [Home Assistant config]
 
 ## Metro + Fluent Themes
 
+Two styles are included in this theme:
+
+<table>
+  <tr width="50%">
+    <td valign="top">
+<b>Metro</b> style has a more vibrant color contrast, sharp corners, and a true black background great for AMOLED screens. Based on the design of Windows 10.<img alt="" src="https://user-images.githubusercontent.com/4341881/177691335-311cec05-ee60-4937-a70c-d1b313609da5.png"/></td>
+    <td valign="top">
+<b>Fluent</b> style has subtle shades of colors, rounded corners, and background colors adjusted to be easy on eyes. Based on the design of Windows 11.<img alt="" src="https://user-images.githubusercontent.com/4341881/177691336-ba4a0aa4-daff-44af-8ed5-9661367e460b.png"/></td>
+  </tr>
+</table>
+
 ### Awesome Features
 
 <table>
   <tr width="50%">
-    <td>Display your home automation status with distinct and bold typography using Segoe UI or Segoe UI Variable fonts. <img alt="Typography" src="https://user-images.githubusercontent.com/4341881/177691335-311cec05-ee60-4937-a70c-d1b313609da5.png"/></td>
-    <td>Use Light and Dark Modes natively. Dark Mode has a true black background great for AMOLED screens. <img alt="Light and Dark Modes" src="https://user-images.githubusercontent.com/4341881/177691336-ba4a0aa4-daff-44af-8ed5-9661367e460b.png"/></td>
+    <td valign="top">
+Display your home automation status with distinct and bold typography using Segoe UI or Segoe UI Variable fonts. <img alt="Typography" src="https://user-images.githubusercontent.com/4341881/177691335-311cec05-ee60-4937-a70c-d1b313609da5.png"/></td>
+    <td valign="top">
+Use Light and Dark Modes natively. Dark Mode has a true black background great for AMOLED screens. <img alt="Light and Dark Modes" src="https://user-images.githubusercontent.com/4341881/177691336-ba4a0aa4-daff-44af-8ed5-9661367e460b.png"/></td>
   </tr>
   <tr width="50%">
-    <td>Switch between 6 color themes. Also adding new themes is relatively easy thanks to YAML Anchors. <img alt="Color Themes" src="https://user-images.githubusercontent.com/4341881/177691338-82039962-61a9-4b4a-a366-5ae90d932c2f.png"/></td>
-    <td>Revamp your More Info cards and various system UI screens to look extra clean and slick. <img alt="Systemwide Theming" src="https://user-images.githubusercontent.com/4341881/177691339-a91d58bf-dc01-4f1e-b35f-7478b4dafe61.png"/></td>
+    <td valign="top">
+Switch between 6 color themes. Also adding new themes is relatively easy thanks to YAML Anchors. <img alt="Color Themes" src="https://user-images.githubusercontent.com/4341881/177691338-82039962-61a9-4b4a-a366-5ae90d932c2f.png"/></td>
+    <td valign="top">
+Revamp your More Info cards and various system UI screens to look extra clean and slick. <img alt="Systemwide Theming" src="https://user-images.githubusercontent.com/4341881/177691339-a91d58bf-dc01-4f1e-b35f-7478b4dafe61.png"/></td>
   </tr>
 </table>
 
