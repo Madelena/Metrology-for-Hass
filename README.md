@@ -18,7 +18,7 @@ To check out what this theme is capable of, check out my [Home Assistant config]
 
 ## Table of Contents
 
-- [Metro Theme](#metro-theme)
+- [Metro Theme](#metro--fluent-themes)
   - [Screenshots](#screenshots)
   - [How to Install the Theme](#how-to-install-the-theme)
 - [Live Tile Templates](#live-tile-templates)
@@ -31,9 +31,9 @@ Two styles are included in this theme:
 <table>
   <tr width="50%">
     <td valign="top">
-<b>Metro</b> style has a more vibrant color contrast, sharp corners, and a true black background great for AMOLED screens. Based on the design of Windows 10.<img alt="" src="https://user-images.githubusercontent.com/4341881/177691335-311cec05-ee60-4937-a70c-d1b313609da5.png"/></td>
+<b>Metro</b> style has a more vibrant color contrast, sharp corners, and a true black background great for AMOLED screens. Based on the design of Windows 10.<img alt="Metro style example" src="https://user-images.githubusercontent.com/4341881/177698759-1770e1a0-eff4-4f3a-aee3-4643733c450c.png"/></td>
     <td valign="top">
-<b>Fluent</b> style has subtle shades of colors, rounded corners, and background colors adjusted to be easy on eyes. Based on the design of Windows 11.<img alt="" src="https://user-images.githubusercontent.com/4341881/177691336-ba4a0aa4-daff-44af-8ed5-9661367e460b.png"/></td>
+<b>Fluent</b> style has subtle shades of colors, rounded corners, and background colors adjusted to be easy on eyes. Based on the design of Windows 11.<img alt="Fluent style example" src="https://user-images.githubusercontent.com/4341881/177698757-b9bffe0e-e9cc-4fb3-8dca-1d07936ec2f7.png"/></td>
   </tr>
 </table>
 
