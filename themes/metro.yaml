@@ -550,6 +550,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
 
 # Base Metro Theme
 
+________________________________________Common Base 4 (Do Not Use):
+
   modes:
     dark: &metro-common-dark
       <<: *common-dark
@@ -589,7 +591,7 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
 
 # Base Fluent Theme
 
-________________________________________Common Base 4 (Do Not Use):
+________________________________________Common Base 5 (Do Not Use):
 
   modes:
     dark: &fluent-common-dark
