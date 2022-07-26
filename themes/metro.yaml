@@ -11,264 +11,265 @@
 
 # BASE THEME
 
-________________________________________Common Base (Do Not Use):
+________________________________________Common Base (Do Not Use): &common-colors
+
+  # Text Colors
+  text-primary-color: var(--primary-text-color)
+  accent-text-color: "rgb(255,255,255)"
+  text-accent-color: var(--accent-text-color)
+
+  # Main Interface Colors
+  divider-color: transparent
+  disabled-color: "rgba(255,255,255,.55)"
+  rgb-disabled-color: "128,128,128"
+  error-color: "#FF4400"
+  rgb-error-color: "255,64,0"
+  warning-color: "#ffa600"
+  success-color: "#008a17"
+  rgb-success-color: "0, 138, 23"
+  info-color: "#039be5"
+
+  # Main Interface Colors
+  lovelace-background: var(--primary-background-color)
+  ha-card-background: var(--card-background-color)
+
+  app-header-background-color: "rgba(var(--rgb-primary-background-color),1)"
+  app-header-text-color: var(--primary-text-color)
+  app-header-selection-bar-color: var(--primary-color)
+  app-header-edit-background-color: rgb(var(--rgb-primary-color-darker))
+  app-header-edit-text-color: var(--accent-text-color)
+  app-header-border-bottom: none
+
+  # Material and Paper
+  light-theme-disabled-color: var(--disabled-color)
+  dark-theme-disabled-color: var(--disabled-color)
+
+  material-disabled-color: var(--disabled-color)
+  material-divider-color: var(--divider-color)
+
+  light-theme-base-color: var(--primary-color)
+  dark-theme-base-color: var(--primary-color)
+
+  dark-primary-color: var(--primary-color)
+  light-primary-color: var(--primary-color)
+
+  mdc-theme-primary: var(--accent-color)
+  mdc-theme-on-primary: var(--accent-text-color)
+
+  # Typography
+  font-stack: &font-stack "Segoe UI Variable Static Text, Segoe UI, SegoeUI, -apple-system,BlinkMacSystemFont, system-ui, sans-serif"
+  display-font-stack: &display-font-stack "Segoe UI Variable Static Display, Segoe UI, SegoeUI, -apple-system,BlinkMacSystemFont, system-ui, sans-serif"
+  mdc-typography-button-font-family: var(--font-stack)
+  mdc-typography-font-family: var(--font-stack)
+  paper-font-common-base_-_font-family: var(--font-stack)
+  paper-font-title_-_font-family: var(--display-font-stack)
+  paper-font-headline_-_font-family: var(--display-font-stack)
+  paper-font-subhead_-_font-family: var(--display-font-stack)
+  paper-font-display1_-_font-family: var(--display-font-stack)
+  paper-font-display2_-_font-family: var(--display-font-stack)
+  paper-font-display3_-_font-family: var(--display-font-stack)
+  paper-font-display4_-_font-family: var(--display-font-stack)
+
+  # Body at 14px = 10.5pt = 1rem
+  body-font-size: 1rem
+  body-font-weight: normal
+  body-line-height: normal
+  card-title-font-size: 1.5rem
+  card-title-font-weight: 500
+  card-title-line-height: normal
+  title-font-size: 3.5rem
+  subtitle-font-size: 1rem
+  small-font-size: 0.9rem
+  
+  h1-font-size: 2.85rem
+  h2-font-size: 2.25rem
+  h3-font-size: 2rem
+  h4-font-size: 1.5rem
+  h5-font-size: 1.15rem
+  h6-font-size: .7rem
+
+  h1-font-weight: 100
+  h2-font-weight: 100
+  h3-font-weight: 100
+  h4-font-weight: 500
+  h5-font-weight: 400
+  h6-font-weight: 400
+
+  body-font: "var(--body-font-weight) var(--body-font-size) var(--font-stack)"
+  card-title-font: "var(--card-title-font-weight) var(--card-title-font-size) var(--display-font-stack)"
+  h1-font: "var(--h1-font-weight) var(--h1-font-size) var(--display-font-stack)"
+  h2-font: "var(--h2-font-weight) var(--h2-font-size) var(--display-font-stack)"
+  h3-font: "var(--h3-font-weight) var(--h3-font-size) var(--display-font-stack)"
+  h4-font: "var(--h4-font-weight) var(--h4-font-size) var(--display-font-stack)"
+  h5-font: "var(--h5-font-weight) var(--h5-font-size) var(--font-stack)"
+  h6-font: "var(--h6-font-weight) var(--h6-font-size) var(--font-stack)"
+
+  paper-font-headline_-_font-size: 3.5rem
+  paper-font-headline_-_font-weight: 500
+  paper-font-headline_-_letter-spacing: 0
+  paper-font-headline_-_line-height: 5rem
+
+  material-small-font-size: 0.875rem
+  material-caption-font-size: 0.7rem
+  material-button-font-size: 1rem
+
+  mush-title-font-size: var(--title-font-size)
+  mush-title-font-weight: 500
+  mush-title-padding: 24px 16px 16px
+  mush-subtitle-font-size: var(--subtitle-font-size)
+  mush-subtitle-font-weight: 500
+  mush-card-primary-font-size: var(--body-font-size)
+  mush-card-secondary-font-size: var(--small-font-size)
+  mush-card-primary-font-weight: 500
+  mush-card-secondary-font-weight: normal
+  mush-chip-font-size: var(--body-font-size)
+  mush-chip-font-weight: normal
+
+  # Layout
+  masonry-view-card-margin: "2px 1px"
+  grid-card-gap: "2px"
+  stack-card-margin: "1px"
+  horizontal-stack-card-margin: "1px"
+
+  mush-spacing: 16px
+  mush-icon-border-radius: 32px
+
+  mdc-icon-size: 24px
+  header-height: 56px
+  mdc-shape-small: 0
+
+  expansion-panel-summary-padding: 0
+  expansion-panel-content-padding: 0
+
+  mush-badge-size: 16px
+  mush-badge-icon-size: 10px
+  mush-button-size: 32px
+  mush-button-icon-size: 20px
+  mush-shape-size: 48px
+  mush-shape-avatar-size: 48px
+  mush-shape-icon-size: 20px
+  #mush-shape-animation:
+  mush-slider-height: 16px
+
+
+  # Color Reset
+  # Map all the colors to the defaults above
+
+  # Icons
+  state-icon-color: var(--primary-text-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--disabled-color)
+
+  # Sidebar Menu
+  sidebar-text-color: var(--primary-text-color)
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: var(--primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color))
+
+  # Sliders
+  paper-slider-knob-color: var(--accent-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-secondary-color: rgb(var(--rgb-primary-color-darker))
+
+  # Labels
+  label-badge-background-color: var(--primary-background-color)
+  label-badge-text-color: var(--primary-text-color)
+  label-badge-red: "#BE3A3E"
+  label-badge-green: "#5CB861"
+  label-badge-blue: "#44A4CD"
+  label-badge-yellow: "#D5AE43"
+  label-badge-gray: "#5F6267"
+
+  # Cards
+  paper-dialog-background-color: var(--card-background-color)
+  paper-listbox-background-color: var(--secondary-background-color)
+  paper-card-background-color: var(--card-background-color)
+
+  # Switches
+  switch-checked-button-color: var(--primary-color)
+  switch-checked-track-color: var(--primary-text-color)
+  switch-unchecked-button-color: rgb(var(--rgb-primary-color-darker))
+  switch-unchecked-track-color: var(--primary-text-color)
+  mdc-radio-unchecked-color: var(--primary-text-color)
+
+  # Color Picker
+  ha-color-picker-wheel-borderwidth: 4
+  ha-color-picker-wheel-bordercolor: var(--primary-text-color)
+  ha-color-picker-wheel-shadow: none
+  ha-color-picker-marker-borderwidth: 4
+  ha-color-picker-marker-bordercolor: var(--accent-text-color)
+
+  # Toggles
+  paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
+  paper-toggle-button-checked-bar-color: var(--switch-checked-track-color)
+  paper-toggle-button-unchecked-button-color: var(--switch-unchecked-button-color)
+  paper-toggle-button-unchecked-bar-color: var(--switch-unchecked-track-color)
+
+  # Table
+  table-row-background-color: var(--primary-background-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  data-table-background-color: var(--primary-background-color)
+
+  # Dropdowns
+  material-background-color: var(--secondary-background-color)
+  material-secondary-background-color: var(--primary-background-color)
+  mdc-text-field-idle-line-color: var(--secondary-text-color)
+
+  # HACS
+  hacs-chip-background-color: var(--primary-color)
+
+  # Code
+  markdown-code-background-color: var(--primary-background-color)
+
+  # Checkboxes
+  mdc-select-fill-color: var(--primary-background-color)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--secondary-text-color)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--primary-color)
+
+  # Input
+  input-fill-color: var(--primary-background-color)
+  input-disabled-fill-color: var(--disabled-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--secondary-text-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+
+  input-idle-line-color: var(--primary-text-color)
+  input-hover-line-color: var(--primary-color)
+  input-disabled-line-color: var(--disabled-text-color)
+
+  input-outlined-idle-border-color: none
+  input-outlined-hover-border-color: none
+  input-outlined-disabled-border-color: var(--disabled-text-color)
+
+  code-editor-background-color: var(--primary-background-color)
+  mdc-text-field-fill-color: var(--primary-background-color)
+
+  # Buttons
+  btn-bg-color-off: var(--primary-background-color)
+  mdc-button-disabled-fill-color: var(--disabled-color)
+  mdc-button-disabled-ink-color: var(--disabled-text-color)
+
+  # Home Assistant override
+  ha-card-box-shadow: "none"
+
+  # Mushroom
+  mush-rgb-pink: var(--rgb-primary-color)
+  mush-rgb-state-entity: var(--rgb-pink)
+
+  # Swiper
+  swiper-theme-color: var(--primary-color)
+
+
+________________________________________Common Base 2 (Do Not Use):
 
   modes:
-    common: &common-colors
-
-      # Text Colors
-      text-primary-color: var(--primary-text-color)
-      accent-text-color: "rgb(255,255,255)"
-      text-accent-color: var(--accent-text-color)
-
-      # Main Interface Colors
-      divider-color: transparent
-      disabled-color: "rgba(255,255,255,.55)"
-      rgb-disabled-color: "128,128,128"
-      error-color: "#FF4400"
-      rgb-error-color: "255,64,0"
-      warning-color: "#ffa600"
-      success-color: "#008a17"
-      rgb-success-color: "0, 138, 23"
-      info-color: "#039be5"
-
-      # Main Interface Colors
-      lovelace-background: var(--primary-background-color)
-      ha-card-background: var(--card-background-color)
-
-      app-header-background-color: "rgba(var(--rgb-primary-background-color),1)"
-      app-header-text-color: var(--primary-text-color)
-      app-header-selection-bar-color: var(--primary-color)
-      app-header-edit-background-color: rgb(var(--rgb-primary-color-darker))
-      app-header-edit-text-color: var(--accent-text-color)
-      app-header-border-bottom: none
-
-      # Material and Paper
-      light-theme-disabled-color: var(--disabled-color)
-      dark-theme-disabled-color: var(--disabled-color)
-
-      material-disabled-color: var(--disabled-color)
-      material-divider-color: var(--divider-color)
-
-      light-theme-base-color: var(--primary-color)
-      dark-theme-base-color: var(--primary-color)
-
-      dark-primary-color: var(--primary-color)
-      light-primary-color: var(--primary-color)
-
-      mdc-theme-primary: var(--accent-color)
-      mdc-theme-on-primary: var(--accent-text-color)
-
-      # Typography
-      font-stack: &font-stack "Segoe UI Variable Static Text, Segoe UI, SegoeUI, -apple-system,BlinkMacSystemFont, system-ui, sans-serif"
-      display-font-stack: &display-font-stack "Segoe UI Variable Static Display, Segoe UI, SegoeUI, -apple-system,BlinkMacSystemFont, system-ui, sans-serif"
-      mdc-typography-button-font-family: var(--font-stack)
-      mdc-typography-font-family: var(--font-stack)
-      paper-font-common-base_-_font-family: var(--font-stack)
-      paper-font-title_-_font-family: var(--display-font-stack)
-      paper-font-headline_-_font-family: var(--display-font-stack)
-      paper-font-subhead_-_font-family: var(--display-font-stack)
-      paper-font-display1_-_font-family: var(--display-font-stack)
-      paper-font-display2_-_font-family: var(--display-font-stack)
-      paper-font-display3_-_font-family: var(--display-font-stack)
-      paper-font-display4_-_font-family: var(--display-font-stack)
-
-      # Body at 14px = 10.5pt = 1rem
-      body-font-size: 1rem
-      body-font-weight: normal
-      body-line-height: normal
-      card-title-font-size: 1.5rem
-      card-title-font-weight: 500
-      card-title-line-height: normal
-      title-font-size: 3.5rem
-      subtitle-font-size: 1rem
-      small-font-size: 0.9rem
-      
-      h1-font-size: 2.85rem
-      h2-font-size: 2.25rem
-      h3-font-size: 2rem
-      h4-font-size: 1.5rem
-      h5-font-size: 1.15rem
-      h6-font-size: .7rem
-
-      h1-font-weight: 100
-      h2-font-weight: 100
-      h3-font-weight: 100
-      h4-font-weight: 500
-      h5-font-weight: 400
-      h6-font-weight: 400
-
-      body-font: "var(--body-font-weight) var(--body-font-size) var(--font-stack)"
-      card-title-font: "var(--card-title-font-weight) var(--card-title-font-size) var(--display-font-stack)"
-      h1-font: "var(--h1-font-weight) var(--h1-font-size) var(--display-font-stack)"
-      h2-font: "var(--h2-font-weight) var(--h2-font-size) var(--display-font-stack)"
-      h3-font: "var(--h3-font-weight) var(--h3-font-size) var(--display-font-stack)"
-      h4-font: "var(--h4-font-weight) var(--h4-font-size) var(--display-font-stack)"
-      h5-font: "var(--h5-font-weight) var(--h5-font-size) var(--font-stack)"
-      h6-font: "var(--h6-font-weight) var(--h6-font-size) var(--font-stack)"
-
-      paper-font-headline_-_font-size: 3.5rem
-      paper-font-headline_-_font-weight: 500
-      paper-font-headline_-_letter-spacing: 0
-      paper-font-headline_-_line-height: 5rem
-
-      material-small-font-size: 0.875rem
-      material-caption-font-size: 0.7rem
-      material-button-font-size: 1rem
-
-      mush-title-font-size: var(--title-font-size)
-      mush-title-font-weight: 500
-      mush-title-padding: 24px 16px 16px
-      mush-subtitle-font-size: var(--subtitle-font-size)
-      mush-subtitle-font-weight: 500
-      mush-card-primary-font-size: var(--body-font-size)
-      mush-card-secondary-font-size: var(--small-font-size)
-      mush-card-primary-font-weight: 500
-      mush-card-secondary-font-weight: normal
-      mush-chip-font-size: var(--body-font-size)
-      mush-chip-font-weight: normal
-
-      # Layout
-      masonry-view-card-margin: "2px 1px"
-      grid-card-gap: "2px"
-      stack-card-margin: "1px"
-      horizontal-stack-card-margin: "1px"
-
-      mush-spacing: 16px
-      mush-icon-border-radius: 32px
-
-      mdc-icon-size: 24px
-      header-height: 56px
-      mdc-shape-small: 0
-
-      expansion-panel-summary-padding: 0
-      expansion-panel-content-padding: 0
-
-      mush-badge-size: 16px
-      mush-badge-icon-size: 10px
-      mush-button-size: 32px
-      mush-button-icon-size: 20px
-      mush-shape-size: 48px
-      mush-shape-avatar-size: 48px
-      mush-shape-icon-size: 20px
-      #mush-shape-animation:
-      mush-slider-height: 16px
-
-
-      # Color Reset
-      # Map all the colors to the defaults above
-
-      # Icons
-      state-icon-color: var(--primary-text-color)
-      state-icon-active-color: var(--primary-color)
-      state-icon-unavailable-color: var(--disabled-color)
-
-      # Sidebar Menu
-      sidebar-text-color: var(--primary-text-color)
-      sidebar-selected-background-color: var(--primary-background-color)
-      sidebar-selected-icon-color: var(--primary-color)
-      sidebar-selected-text-color: var(--sidebar-selected-icon-color))
-
-      # Sliders
-      paper-slider-knob-color: var(--accent-color)
-      paper-slider-knob-start-color: var(--paper-slider-knob-color)
-      paper-slider-pin-color: var(--paper-slider-knob-color)
-      paper-slider-active-color: var(--paper-slider-knob-color)
-      paper-slider-secondary-color: rgb(var(--rgb-primary-color-darker))
-
-      # Labels
-      label-badge-background-color: var(--primary-background-color)
-      label-badge-text-color: var(--primary-text-color)
-      label-badge-red: "#BE3A3E"
-      label-badge-green: "#5CB861"
-      label-badge-blue: "#44A4CD"
-      label-badge-yellow: "#D5AE43"
-      label-badge-gray: "#5F6267"
-
-      # Cards
-      paper-dialog-background-color: var(--card-background-color)
-      paper-listbox-background-color: var(--secondary-background-color)
-      paper-card-background-color: var(--card-background-color)
-
-      # Switches
-      switch-checked-button-color: var(--primary-color)
-      switch-checked-track-color: var(--primary-text-color)
-      switch-unchecked-button-color: rgb(var(--rgb-primary-color-darker))
-      switch-unchecked-track-color: var(--primary-text-color)
-      mdc-radio-unchecked-color: var(--primary-text-color)
-
-      # Color Picker
-      ha-color-picker-wheel-borderwidth: 4
-      ha-color-picker-wheel-bordercolor: var(--primary-text-color)
-      ha-color-picker-wheel-shadow: none
-      ha-color-picker-marker-borderwidth: 4
-      ha-color-picker-marker-bordercolor: var(--accent-text-color)
-
-      # Toggles
-      paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
-      paper-toggle-button-checked-bar-color: var(--switch-checked-track-color)
-      paper-toggle-button-unchecked-button-color: var(--switch-unchecked-button-color)
-      paper-toggle-button-unchecked-bar-color: var(--switch-unchecked-track-color)
-
-      # Table
-      table-row-background-color: var(--primary-background-color)
-      table-row-alternative-background-color: var(--secondary-background-color)
-      data-table-background-color: var(--primary-background-color)
-
-      # Dropdowns
-      material-background-color: var(--secondary-background-color)
-      material-secondary-background-color: var(--primary-background-color)
-      mdc-text-field-idle-line-color: var(--secondary-text-color)
-
-      # HACS
-      hacs-chip-background-color: var(--primary-color)
-
-      # Code
-      markdown-code-background-color: var(--primary-background-color)
-
-      # Checkboxes
-      mdc-select-fill-color: var(--primary-background-color)
-      mdc-select-ink-color: var(--primary-text-color)
-      mdc-select-label-ink-color: var(--secondary-text-color)
-      mdc-select-idle-line-color: var(--primary-text-color)
-      mdc-select-dropdown-icon-color: var(--secondary-text-color)
-      mdc-select-hover-line-color: var(--primary-color)
-
-      # Input
-      input-fill-color: var(--primary-background-color)
-      input-disabled-fill-color: var(--disabled-color)
-      input-dropdown-icon-color: var(--secondary-text-color)
-
-      input-ink-color: var(--primary-text-color)
-      input-label-ink-color: var(--secondary-text-color)
-      input-disabled-ink-color: var(--disabled-text-color)
-
-      input-idle-line-color: var(--primary-text-color)
-      input-hover-line-color: var(--primary-color)
-      input-disabled-line-color: var(--disabled-text-color)
-
-      input-outlined-idle-border-color: none
-      input-outlined-hover-border-color: none
-      input-outlined-disabled-border-color: var(--disabled-text-color)
-
-      code-editor-background-color: var(--primary-background-color)
-      mdc-text-field-fill-color: var(--primary-background-color)
-
-      # Buttons
-      btn-bg-color-off: var(--primary-background-color)
-      mdc-button-disabled-fill-color: var(--disabled-color)
-      mdc-button-disabled-ink-color: var(--disabled-text-color)
-
-      # Home Assistant override
-      ha-card-box-shadow: "none"
-
-      # Mushroom
-      mush-rgb-pink: var(--rgb-primary-color)
-      mush-rgb-state-entity: var(--rgb-pink)
-
-      # Swiper
-      swiper-theme-color: var(--primary-color)
-
     dark: &common-dark
       <<: *common-colors
 
@@ -325,231 +326,231 @@ ________________________________________Common Base (Do Not Use):
 ############################################
 
 
-  card-mods: &common-card-mods
+________________________________________Common Base 3 (Do Not Use): &common-card-mods
 
-    # Card Mod
-    card-mod-row-yaml: &card-mod-row |
-      .: |
+  # Card Mod
+  card-mod-row-yaml: &card-mod-row |
+    .: |
       hui-generic-entity-row {
         padding-top: 4px;
         padding-bottom: 4px;
       }
-        .info, .info > * {
-          white-space: normal !important;
-        }
-        .secondary {
-          font-size: var(--small-font-size);
-          line-height: 1.4;
-        }
-        .state, .entity div {
-          font-size: var(--h5-font-size);
-          font-weight: 400;
-        }
-      hui-generic-entity-row$: |
-        .info, .info > * {
+      .info, .info > * {
         white-space: normal !important;
       }
-        .secondary {
-          font-size: var(--small-font-size);
-          line-height: 1.4;
-        }                  
-        .state, .entity div {
-          font-size: var(--h5-font-size);
-          font-weight: 400;
-        }
-        
-    card-mod-card: &card-mod-card |
-      ha-card {
-        --mdc-icon-size: 20px
+      .secondary {
+        font-size: var(--small-font-size);
+        line-height: 1.4;
       }
-      ha-card .value {
+      .state, .entity div {
+        font-size: var(--h5-font-size);
+        font-weight: 400;
+      }
+    hui-generic-entity-row$: |
+      .info, .info > * {
+        white-space: normal !important;
+      }
+      .secondary {
+        font-size: var(--small-font-size);
+        line-height: 1.4;
+      }                  
+      .state, .entity div {
+        font-size: var(--h5-font-size);
+        font-weight: 400;
+      }
+      
+  card-mod-card: &card-mod-card |
+    ha-card {
+      --mdc-icon-size: 20px
+    }
+    ha-card .value {
+      font-size: var(--h1-font-size);
+      font-weight: var(--h1-font-weight);
+      margin-right: 0;
+    }
+    ha-card .name {
+      font-size: var(--body-font-size);
+      line-height: var(--body-line-height);
+      font-weight: var(--body-font-weight);
+      color: var(--primary-text-color);
+    }
+    ha-card .info {
+      line-height: 32px;
+      padding-top: 8px;
+    }
+    ha-card .header {
+      padding-top: 16px !important;
+    }
+    .icon {
+      line-height: 16px !important;
+    }
+    ha-card .measurement {
+      font-size: var(--h6-font-size);
+      font-weight: 700;
+      color: var(--secondary-text-color);
+      text-transform: uppercase;
+    }
+    .card-header, .card-header .name {
+      font-size: var(--card-title-font-size);
+      line-height: var(--card-title-line-height);
+      font-weight: var(--card-title-font-weight);
+      letter-spacing: 0;
+    }
+    .card-header {
+      margin-bottom: 8px;
+      padding: 12px 16px;
+    }
+    :host ::slotted(.card-content:not(:first-child)), slot:not(:first-child)::slotted(.card-content) {
+      margin-top: 0;
+    }
+    .entities {
+      align-items: flex-start !important;
+    }
+
+  card-mod-glance-yaml: &card-mod-glance |
+    .: |
+      state-badge {
+        --mdc-icon-size: 32px;
+        order: 0;
+      }
+      div.name {
+        font-size: var(--body-font-size);
+        color: var(--primary-font-color);
+        order: 1 !important;
+      }
+      div {
+        order: 2;
+        font-size: var(--small-font-size);
+        color: var(--secondary-text-color);
+        line-height: 1.33;
+        white-space: unset !important;
+      }
+
+  card-mod-more-info-yaml: &card-mod-more-info-yaml |
+    $: |
+      @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        .mdc-dialog__surface {
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
+        }
+      }
+    ha-header-bar$: |
+      .mdc-top-app-bar {
+        background: none !important;
+      }
+    .: |
+      .mdc-top-app-bar__title, .main-title {
+        text-transform: uppercase;
+        font-size: var(--body-font-size);
+        font-weight: 500;
+        line-height: 1.1;
+        overflow: inherit;
+        white-space: normal;
+        margin-left: -6px;
+      }
+      .content {
+        xmargin-top: -8px;
+      }
+    state-card-display$: |
+      .state {
+        margin-left: 46px !important;
         font-size: var(--h1-font-size);
         font-weight: var(--h1-font-weight);
-        margin-right: 0;
+        text-align: left !important;
+        line-height: 1.1;
       }
-      ha-card .name {
-        font-size: var(--body-font-size);
-        line-height: var(--body-line-height);
-        font-weight: var(--body-font-weight);
-        color: var(--primary-text-color);
+      .layout.horizontal {
+        flex-direction: column-reverse !important;
       }
-      ha-card .info {
-        line-height: 32px;
-        padding-top: 8px;
-      }
-      ha-card .header {
-        padding-top: 16px !important;
-      }
-      .icon {
-        line-height: 16px !important;
-      }
-      ha-card .measurement {
+      state-info { margin-left: -8px; margin-top: -42px; }
+    state-card-display$state-info$: |
+      .name { display: none; }
+      .time-ago { margin-top: 42px; 
         font-size: var(--h6-font-size);
-        font-weight: 700;
-        color: var(--secondary-text-color);
+        text-transform: uppercase;}
+      state-badge {
+        width: 32px !important;
+        height: 32px !important;
+        border-radius: 0 !important;
+        margin: 4px 8px 8px 8px;
+      }
+      state-badge[icon] {
+        margin: 0 0 0 8px !important;
+      }
+    more-info-default$ha-attributes$: |
+      .data-entry { flex-direction: column !important; }
+      .key {
+        font-size: var(--h6-font-size);
         text-transform: uppercase;
+        line-height: 1.1;
       }
-      .card-header, .card-header .name {
-        font-size: var(--card-title-font-size);
-        line-height: var(--card-title-line-height);
-        font-weight: var(--card-title-font-weight);
-        letter-spacing: 0;
+      .data-entry .value {
+        text-align: left !important;
+        font-size: var(--h2-font-size);
+        font-weight: var(--h2-font-weight);
+        line-height: 1.1;
+        margin-bottom: 16px;
+        max-width: none !important;
       }
-      .card-header {
-        margin-bottom: 8px;
-        padding: 12px 16px;
-      }
-      :host ::slotted(.card-content:not(:first-child)), slot:not(:first-child)::slotted(.card-content) {
-        margin-top: 0;
-      }
-      .entities {
-        align-items: flex-start !important;
-      }
-
-    card-mod-glance-yaml: &card-mod-glance |
-      .: |
-        state-badge {
-          --mdc-icon-size: 32px;
-          order: 0;
-        }
-        div.name {
-          font-size: var(--body-font-size);
-          color: var(--primary-font-color);
-          order: 1 !important;
-        }
-        div {
-          order: 2;
-          font-size: var(--small-font-size);
-          color: var(--secondary-text-color);
-          line-height: 1.33;
-          white-space: unset !important;
-        }
-
-    card-mod-more-info-yaml: &card-mod-more-info-yaml |
-      $: |
-        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-          .mdc-dialog__surface {
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
+    ha-more-info-history$state-history-charts:
+      $:
+        state-history-chart-timeline$: |
+          .chartTooltip {
+            margin-top: -200px;
           }
-        }
-      ha-header-bar$: |
-        .mdc-top-app-bar {
-          background: none !important;
-        }
-      .: |
-        .mdc-top-app-bar__title, .main-title {
-          text-transform: uppercase;
-          font-size: var(--body-font-size);
-          font-weight: 500;
-          line-height: 1.1;
-          overflow: inherit;
-          white-space: normal;
-          margin-left: -6px;
-        }
-        .content {
-          xmargin-top: -8px;
-        }
-      state-card-display$: |
-        .state {
-          margin-left: 46px !important;
-          font-size: var(--h1-font-size);
-          font-weight: var(--h1-font-weight);
-          text-align: left !important;
-          line-height: 1.1;
-        }
-        .layout.horizontal {
-          flex-direction: column-reverse !important;
-        }
-        state-info { margin-left: -8px; margin-top: -42px; }
-      state-card-display$state-info$: |
-        .name { display: none; }
-        .time-ago { margin-top: 42px; 
-          font-size: var(--h6-font-size);
-          text-transform: uppercase;}
-        state-badge {
-          width: 32px !important;
-          height: 32px !important;
-          border-radius: 0 !important;
-          margin: 4px 8px 8px 8px;
-        }
-        state-badge[icon] {
-          margin: 0 0 0 8px !important;
-        }
-      more-info-default$ha-attributes$: |
-        .data-entry { flex-direction: column !important; }
-        .key {
-          font-size: var(--h6-font-size);
-          text-transform: uppercase;
-          line-height: 1.1;
-        }
-        .data-entry .value {
-          text-align: left !important;
-          font-size: var(--h2-font-size);
-          font-weight: var(--h2-font-weight);
-          line-height: 1.1;
-          margin-bottom: 16px;
-          max-width: none !important;
-        }
-      ha-more-info-history$state-history-charts:
-        $:
-          state-history-chart-timeline$: |
-            .chartTooltip {
-              margin-top: -200px;
-            }
-      ha-more-info-history:
-        $:
-          state-history-charts:
-            $:
-              state-history-chart-line:
-                $:
-                  ha-chart-base:
-                    $: |
-                      .chartContainer {
-                        filter: hue-rotate(var(--hue-primary-color)) saturate(3) brightness(0.66)
-                      }
+    ha-more-info-history:
+      $:
+        state-history-charts:
+          $:
+            state-history-chart-line:
+              $:
+                ha-chart-base:
+                  $: |
+                    .chartContainer {
+                      filter: hue-rotate(var(--hue-primary-color)) saturate(3) brightness(0.66)
+                    }
 
-    card-mod-root-yaml: &card-mod-root |
-      .: |
-        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-          app-header, app-toolbar {
-            background-color: "rgba(var(--rgb-primary-background-color),.33)"
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-          }
+  card-mod-root-yaml: &card-mod-root |
+    .: |
+      @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        app-header, app-toolbar {
+          background-color: "rgba(var(--rgb-primary-background-color),.33)"
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
         }
-        app-toolbar [main-title] {
-          font-size: var(--h5-font-size);
-          line-height: 1.1;
-          font-weight: var(--h5-font-weight);
-          text-transform: uppercase;
-          margin-left: 8px !important;
-        }
-      app-header$: |
-        :host::before {
-          box-shadow: inset 0px 4px 6px -4px rgb(0 0 0 / 10%) !important;
-        }
-        
-    card-mod-view: &card-mod-view |
-      .main-title {
-        font-size: 10pt;
-        font-weight: 500;
+      }
+      app-toolbar [main-title] {
+        font-size: var(--h5-font-size);
+        line-height: 1.1;
+        font-weight: var(--h5-font-weight);
         text-transform: uppercase;
+        margin-left: 8px !important;
       }
-      #tabbar {
-        font-size: 10pt;
-        text-transform: uppercase;
-        font-weight: 500;
+    app-header$: |
+      :host::before {
+        box-shadow: inset 0px 4px 6px -4px rgb(0 0 0 / 10%) !important;
       }
-      #tabbar:not(.bottom-bar) {
-        justify-content: left;
-      }
+
+  card-mod-view: &card-mod-view |
+    .main-title {
+      font-size: 10pt;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    #tabbar {
+      font-size: 10pt;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    #tabbar:not(.bottom-bar) {
+      justify-content: left;
+    }
 
 
 # Base Metro Theme
 
-  metro-modes:
+  modes:
     dark: &metro-common-dark
       <<: *common-dark
       primary-background-color: "rgb(0,0,0)"
@@ -588,7 +589,9 @@ ________________________________________Common Base (Do Not Use):
 
 # Base Fluent Theme
 
-  fluent-modes:
+________________________________________Common Base 4 (Do Not Use):
+
+  modes:
     dark: &fluent-common-dark
       <<: *common-dark
       ha-card-border-radius: "4px"
@@ -630,7 +633,6 @@ Metro Red:
   <<: *common-card-mods
   card-mod-theme: "Metro Red"
 
-  colors: &colors-red
   primary-color: "#C30052"
   rgb-primary-color: "195,0,82"
   rgb-primary-color-darker: "144, 0, 60"
@@ -643,19 +645,25 @@ Metro Red:
   modes:
     dark:
       <<: *metro-common-dark
-      <<: *colors-red
     light:
       <<: *metro-common-light
-      <<: *colors-red
-  
+
 Fluent Red:
   <<: *common-card-mods
   card-mod-theme: "Fluent Red"
 
+  primary-color: "#C30052"
+  rgb-primary-color: "195,0,82"
+  rgb-primary-color-darker: "144, 0, 60"
+  rgb-primary-color-lighter: "233, 0, 98"
+  hue-primary-color: "335deg"
+
+  accent-color: "#e90062"
+  rgb-accent-color: "233, 0, 98"
+
   modes:
     dark:
       <<: *fluent-common-dark
-      <<: *colors-red
       primary-background-color: "rgb(27,24,25)"
       rgb-primary-background-color: "27,24,25"
       secondary-background-color: "rgb(67,61,63)"
@@ -664,7 +672,6 @@ Fluent Red:
 
     light:
       <<: *fluent-common-light
-      <<: *colors-red
       secondary-background-color: "rgb(249,210,226)"
       card-background-color: "rgb(245,239,242)"
       rgb-card-background-color: "245,239,242"
@@ -675,7 +682,6 @@ Metro Blue:
   <<: *common-card-mods
   card-mod-theme: "Metro Blue"
 
-  colors: &colors-blue
   primary-color: "#0078d7"
   rgb-primary-color: "0,120,215"
   rgb-primary-color-darker: "0,91,163"
@@ -688,19 +694,25 @@ Metro Blue:
   modes:
     dark:
       <<: *metro-common-dark
-      <<: *colors-blue
     light:
       <<: *metro-common-light
-      <<: *colors-blue
 
 Fluent Blue:
   <<: *common-card-mods
   card-mod-theme: "Fluent Blue"
 
+  primary-color: "#0078d7"
+  rgb-primary-color: "0,120,215"
+  rgb-primary-color-darker: "0,91,163"
+  rgb-primary-color-lighter: "0,141,253"
+  hue-primary-color: "207deg"
+
+  accent-color: "#008dfd"
+  rgb-accent-color: "0,141,253"
+
   modes:
     dark: 
       <<: *fluent-common-dark
-      <<: *colors-blue
       primary-background-color: "rgb(24,26,27)"
       rgb-primary-background-color: "24,26,27"
       secondary-background-color: "rgb(57,64,70)"
@@ -709,18 +721,16 @@ Fluent Blue:
 
     light: 
       <<: *fluent-common-light
-      <<: *colors-blue
       secondary-background-color: "rgb(210,231,249)"
       card-background-color: "rgb(239,243,245)"
       rgb-card-background-color: "239,243,245"
 
-      
+
 
 Metro Green:
   <<: *common-card-mods
   card-mod-theme: "Metro Green"
 
-  colors: &colors-green
   primary-color: "#00cb6a"
   rgb-primary-color: "0, 203, 106"
   rgb-primary-color-darker: "0, 151, 79"
@@ -733,19 +743,25 @@ Metro Green:
   modes:
     dark:
       <<: *metro-common-dark
-      <<: *colors-green
     light:
       <<: *metro-common-light
-      <<: *colors-green
 
 Fluent Green:
   <<: *common-card-mods
   card-mod-theme: "Fluent Green"
 
+  primary-color: "#00cb6a"
+  rgb-primary-color: "0, 203, 106"
+  rgb-primary-color-darker: "0, 151, 79"
+  rgb-primary-color-lighter: "0, 241, 125"
+  hue-primary-color: "151deg"
+
+  accent-color: "#00f17d"
+  rgb-accent-color: "0, 241, 125"
+
   modes:
     dark: 
       <<: *fluent-common-dark
-      <<: *colors-green
       primary-background-color: "rgb(24,27,26)"
       rgb-primary-background-color: "24,27,26"
       secondary-background-color: "rgb(57,70,64)"
@@ -754,7 +770,6 @@ Fluent Green:
 
     light: 
       <<: *fluent-common-light
-      <<: *colors-green
       secondary-background-color: "rgb(210,249,231)"
       card-background-color: "rgb(239,245,243)"
       rgb-card-background-color: "239,245,243"
@@ -765,7 +780,6 @@ Metro Orange:
   <<: *common-card-mods
   card-mod-theme: "Metro Orange"
 
-  colors: &colors-orange
   primary-color: "#ff8c00"
   rgb-primary-color: "255, 140, 0"
   rgb-primary-color-darker: "204, 112, 0"
@@ -778,19 +792,25 @@ Metro Orange:
   modes:
     dark:
       <<: *metro-common-dark
-      <<: *colors-orange
     light:
       <<: *metro-common-light
-      <<: *colors-orange
 
 Fluent Orange:
   <<: *common-card-mods
   card-mod-theme: "Fluent Orange"
 
+  primary-color: "#ff8c00"
+  rgb-primary-color: "255, 140, 0"
+  rgb-primary-color-darker: "204, 112, 0"
+  rgb-primary-color-lighter: "255, 157, 0"
+  hue-primary-color: "33deg"
+
+  accent-color: "#ff9d00"
+  rgb-accent-color: "255, 157, 0"
+
   modes:
     dark: 
       <<: *fluent-common-dark
-      <<: *colors-orange
       primary-background-color: "rgb(27,26,24)"
       rgb-primary-background-color: "27,26,24"
       secondary-background-color: "rgb(70,64,57)"
@@ -799,7 +819,6 @@ Fluent Orange:
 
     light: 
       <<: *fluent-common-light
-      <<: *colors-orange
       secondary-background-color: "rgb(249,231,210)"
       card-background-color: "rgb(245,243,239)"
       rgb-card-background-color: "245,243,239"
@@ -810,7 +829,6 @@ Metro Purple:
   <<: *common-card-mods
   card-mod-theme: "Metro Purple"
 
-  colors: &colors-purple
   primary-color: "#6a00cb"
   rgb-primary-color: "106, 0, 203" # hsl(hue,100,42)
   rgb-primary-color-darker: "105, 0, 204" # hsl(hue,100,32)
@@ -823,19 +841,25 @@ Metro Purple:
   modes:
     dark:
       <<: *metro-common-dark
-      <<: *colors-purple
     light:
       <<: *metro-common-light
-      <<: *colors-purple
 
 Fluent Purple:
   <<: *common-card-mods
   card-mod-theme: "Fluent Purple"
 
+  primary-color: "#6a00cb"
+  rgb-primary-color: "106, 0, 203" # hsl(hue,100,42)
+  rgb-primary-color-darker: "105, 0, 204" # hsl(hue,100,32)
+  rgb-primary-color-lighter: "169, 77, 255" # hsl(hue,100,50)
+  hue-primary-color: "271deg"
+
+  accent-color: "#A94DFF"
+  rgb-accent-color: "169, 77, 255"
+
   modes:
     dark: 
       <<: *fluent-common-dark
-      <<: *colors-purple
       primary-background-color: "rgb(26,24,27)" # hsl(hue,5,10)
       rgb-primary-background-color: "26,24,27"
       secondary-background-color: "rgb(64,57,70)" # hsl(hue,10,25)
@@ -844,11 +868,9 @@ Fluent Purple:
 
     light: 
       <<: *fluent-common-light
-      <<: *colors-purple
       secondary-background-color: "rgb(230,210,249)" # hsl(hue,75,90)
       card-background-color: "rgb(242,239,245)" # hsl(hue,25,95)
       rgb-card-background-color: "242,239,245"
-
 
 
 
@@ -858,32 +880,38 @@ Metro Slate:
   <<: *common-card-mods
   card-mod-theme: "Metro Slate"
 
-  colors: &colors-slate
-    primary-color: "#4f5a68"
-    rgb-primary-color: "79,90,104"
-    rgb-primary-color-darker: "57,65,76"
-    rgb-primary-color-lighter: "101,115,134"
-    hue-primary-color: "214deg"
+  primary-color: "#4f5a68"
+  rgb-primary-color: "79,90,104"
+  rgb-primary-color-darker: "57,65,76"
+  rgb-primary-color-lighter: "101,115,134"
+  hue-primary-color: "214deg"
 
-    accent-color: "#677385"
-    rgb-accent-color: "101,115,134"
+  accent-color: "#677385"
+  rgb-accent-color: "101,115,134"
 
   modes:
     dark:
       <<: *metro-common-dark
-      <<: *colors-slate
     light:
       <<: *metro-common-light
-      <<: *colors-slate
 
 
 Fluent Slate:
   <<: *common-card-mods
   card-mod-theme: "Fluent Slate"
+
+  primary-color: "#4f5a68"
+  rgb-primary-color: "79,90,104"
+  rgb-primary-color-darker: "57,65,76"
+  rgb-primary-color-lighter: "101,115,134"
+  hue-primary-color: "214deg"
+
+  accent-color: "#677385"
+  rgb-accent-color: "101,115,134"
+
   modes:
     dark:
       <<: *fluent-common-dark
-      <<: *colors-slate
       primary-background-color: "rgb(24,25,27)"
       rgb-primary-background-color: "24,25,27"
       secondary-background-color: "rgb(57,63,70)"
@@ -892,11 +920,10 @@ Fluent Slate:
 
     light:
       <<: *fluent-common-light
-      <<: *colors-slate
       secondary-background-color: "rgb(223,229,236)"
       card-background-color: "rgb(240,242,244)"
       rgb-card-background-color: "240,242,244"
 
-
+  
 
 # Paste your custom color themes here.
