@@ -564,7 +564,7 @@ ________________________________________Common Base 4 (Do Not Use):
       ha-card-border-radius: 0
       ha-config-card-border-radius: 0
       ha-dialog-border-radius: 0
-      vertical-stack-card-margin: 0
+      vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 0px
 
       mdc-theme-surface: "rgb(24,24,24)"
@@ -581,7 +581,7 @@ ________________________________________Common Base 4 (Do Not Use):
       ha-card-border-radius: 0
       ha-config-card-border-radius: 0
       ha-dialog-border-radius: 0
-      vertical-stack-card-margin: 0
+      vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 0px
 
       mdc-theme-surface: var(--primary-background-color)
