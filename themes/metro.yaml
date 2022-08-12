@@ -618,7 +618,7 @@ ________________________________________Common Base 5 (Do Not Use):
       ha-card-border-radius: "4px"
       ha-config-card-border-radius: "4px"
       ha-dialog-border-radius: "8px"
-      vertical-stack-card-margin: "1px"
+      vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 4px      
 
       mdc-theme-surface: var(--primary-background-color)
@@ -632,7 +632,7 @@ ________________________________________Common Base 5 (Do Not Use):
       ha-card-border-radius: "4px"
       ha-config-card-border-radius: "4px"
       ha-dialog-border-radius: "8px"
-      vertical-stack-card-margin: "1px"
+      vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 4px
 
       mdc-theme-surface: var(--card-background-color)
