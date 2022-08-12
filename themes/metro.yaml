@@ -532,6 +532,25 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         box-shadow: inset 0px 4px 6px -4px rgb(0 0 0 / 10%) !important;
       }
 
+  card-mod-sidebar: &card-mod-sidebar |
+    .menu .title {
+      font-weight: 500;
+    }
+    :host([expanded]) paper-icon-item {
+      width: 100%;
+    }
+    .iron-selected paper-icon-item {
+      border-left: 3px solid var(--accent-color) !important;
+      border-radius: var(--ha-card-border-radius) !important;
+      padding-left: 9px !important;
+    }
+    .profile.iron-selected paper-icon-item {
+      padding-left: 1px !important;
+    }
+    paper-icon-item span {
+      font-weight: normal !important;
+    }
+
   card-mod-view: &card-mod-view |
     .main-title {
       font-size: 10pt;
