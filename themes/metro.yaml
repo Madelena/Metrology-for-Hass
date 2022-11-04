@@ -56,6 +56,10 @@ ________________________________________Common Base (Do Not Use): &common-colors
   mdc-theme-primary: var(--accent-color)
   mdc-theme-on-primary: var(--accent-text-color)
 
+  # Borders
+  ha-card-border-width: 0px
+  ha-card-border-color: transparent
+
   # Typography
   font-stack: &font-stack "Segoe UI Variable Static Text, Segoe UI, SegoeUI, -apple-system,BlinkMacSystemFont, system-ui, sans-serif"
   display-font-stack: &display-font-stack "Segoe UI Variable Static Display, Segoe UI, SegoeUI, -apple-system,BlinkMacSystemFont, system-ui, sans-serif"
