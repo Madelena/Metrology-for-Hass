@@ -266,6 +266,9 @@ ________________________________________Common Base (Do Not Use): &common-colors
   # Swiper
   swiper-theme-color: var(--primary-color)
 
+  # Video
+  video-max-height: none
+
 
 ________________________________________Common Base 2 (Do Not Use):
 
