@@ -75,7 +75,7 @@ ________________________________________Common Base (Do Not Use): &common-colors
   body-font-weight: normal
   body-line-height: normal
   card-title-font-size: 1.5rem
-  card-title-font-weight: 500
+  card-title-font-weight: 600
   card-title-line-height: normal
   title-font-size: 3.5rem
   subtitle-font-size: 1rem
@@ -91,7 +91,7 @@ ________________________________________Common Base (Do Not Use): &common-colors
   h1-font-weight: 100
   h2-font-weight: 100
   h3-font-weight: 100
-  h4-font-weight: 500
+  h4-font-weight: 600
   h5-font-weight: 400
   h6-font-weight: 400
 
@@ -105,7 +105,7 @@ ________________________________________Common Base (Do Not Use): &common-colors
   h6-font: "var(--h6-font-weight) var(--h6-font-size) var(--font-stack)"
 
   paper-font-headline_-_font-size: 3.5rem
-  paper-font-headline_-_font-weight: 500
+  paper-font-headline_-_font-weight: 600
   paper-font-headline_-_letter-spacing: 0
   paper-font-headline_-_line-height: 5rem
 
@@ -114,13 +114,13 @@ ________________________________________Common Base (Do Not Use): &common-colors
   material-button-font-size: 1rem
 
   mush-title-font-size: var(--title-font-size)
-  mush-title-font-weight: 500
+  mush-title-font-weight: 600
   mush-title-padding: 24px 16px 16px
   mush-subtitle-font-size: var(--subtitle-font-size)
-  mush-subtitle-font-weight: 500
+  mush-subtitle-font-weight: 600
   mush-card-primary-font-size: var(--body-font-size)
   mush-card-secondary-font-size: var(--small-font-size)
-  mush-card-primary-font-weight: 500
+  mush-card-primary-font-weight: 600
   mush-card-secondary-font-weight: normal
   mush-chip-font-size: var(--body-font-size)
   mush-chip-font-weight: normal
@@ -446,7 +446,7 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       .mdc-top-app-bar__title, .main-title {
         text-transform: uppercase;
         font-size: var(--body-font-size);
-        font-weight: 500;
+        font-weight: 600;
         line-height: 1.1;
         overflow: inherit;
         white-space: normal;
@@ -537,7 +537,7 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
 
   card-mod-sidebar: &card-mod-sidebar |
     .menu .title {
-      font-weight: 500;
+      font-weight: 600;
     }
     :host([expanded]) paper-icon-item {
       width: 100%;
@@ -557,13 +557,13 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
   card-mod-view: &card-mod-view |
     .main-title {
       font-size: 10pt;
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
     }
     #tabbar {
       font-size: 10pt;
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 600;
     }
     #tabbar:not(.bottom-bar) {
       justify-content: left;
