@@ -111,7 +111,11 @@ ________________________________________Common Base (Do Not Use): &common-colors
   paper-font-headline_-_font-size: 3.5rem
   paper-font-headline_-_font-weight: 600
   paper-font-headline_-_letter-spacing: 0
-  paper-font-headline_-_line-height: 5rem
+  paper-font-headline_-_line-height: 1.4
+
+  paper-font-title_-_font-size: var(--card-title-font-size)
+  paper-font-title_-_font-weight: var(--card-title-font-weight)
+  paper-font-title_-_line-height: var(--card-title-line-height)
 
   material-small-font-size: 0.875rem
   material-caption-font-size: 0.7rem
@@ -442,6 +446,9 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
           background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
         }
       }
+      .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
+        overflow: visible;
+      }
       .mdc-dialog__surface {
         box-shadow: 0 0px 16px 4px rgba(var(--dialog-box-shadow), .15), 0 16px 64px 32px rgba(var(--dialog-box-shadow), .5) !important;
       }
@@ -540,6 +547,10 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
     app-header$: |
       :host::before {
         box-shadow: inset 0px 4px 6px -4px rgb(0 0 0 / 10%) !important;
+      }
+    ha-app-layout$app-header$app-toolbar$ha-tabs$: |
+      .iron-selected paper-tab {
+      
       }
 
   card-mod-sidebar: &card-mod-sidebar |
