@@ -25,9 +25,11 @@ ________________________________________Common Base (Do Not Use): &common-colors
   error-color: "#FF4400"
   rgb-error-color: "255,64,0"
   warning-color: "#ffa600"
+  rgb-warning-color: "255,166,0"
   success-color: "#008a17"
-  rgb-success-color: "0, 138, 23"
+  rgb-success-color: "0,138,23"
   info-color: "#039be5"
+  rgb-info-color: "3,155,229"
 
   # Main Interface Colors
   lovelace-background: var(--primary-background-color)
@@ -277,6 +279,55 @@ ________________________________________Common Base (Do Not Use): &common-colors
   # Video
   video-max-height: none
 
+  # States
+  rgb-state-default-color: var(--rgb-accent-color)
+  rgb-state-inactive-color: var(--rgb-secondary-background-color)
+  rgb-state-unavailable-color: var(--rgb-disabled-text-color)
+  rgb-state-alarm-armed-color: var(--rgb-success-color)
+  rgb-state-alarm-arming-color: var(--rgb-warning-color)
+  rgb-state-alarm-disarmed-color: var(--rgb-secondary-background-color)
+  rgb-state-alarm-pending-color: var(--rgb-warning-color)
+  rgb-state-alarm-triggered-color: var(--rgb-error-color)
+  rgb-state-alert-color: var(--rgb-error-color)
+  rgb-state-automation-color: var(--rgb-primary-color)
+  rgb-state-binary-sensor-alerting-color: var(--rgb-error-color)
+  rgb-state-binary-sensor-color: var(--rgb-primary-color)
+  rgb-state-calendar-color: var(--rgb-primary-color)
+  rgb-state-camera-color: var(--rgb-primary-color)
+  rgb-state-climate-auto-color: var(--rgb-success-color)
+  rgb-state-climate-cool-color: var(--rgb-blue-color)
+  rgb-state-climate-dry-color: var(--rgb-warning-color)
+  rgb-state-climate-fan-only-color: var(--rgb-cyan-color)
+  rgb-state-climate-heat-color: var(--rgb-deep-orange-color)
+  rgb-state-climate-heat-cool-color: var(--rgb-primary-color)
+  rgb-state-climate-idle-color: var(--rgb-secondary-background-color)
+  rgb-state-cover-color: var(--rgb-purple-color)
+  rgb-state-fan-color: var(--rgb-cyan-color)
+  rgb-state-group-color: var(--rgb-primary-color)
+  rgb-state-humidifier-color: var(--rgb-blue-color)
+  rgb-state-input-boolean-color: var(--rgb-primary-color)
+  rgb-state-light-color: var(--rgb-primary-color)
+  rgb-state-lock-jammed-color: var(--rgb-error-color)
+  rgb-state-lock-locked-color: var(--rgb-success-color)
+  rgb-state-lock-pending-color: var(--rgb-warning-color)
+  rgb-state-lock-unlocked-color: var(--rgb-error-color)
+  rgb-state-media-player-color: var(--rgb-primary-color)
+  rgb-state-person-home-color: var(--rgb-success-color)
+  rgb-state-person-not-home-color: var(--rgb-secondary-background-color)
+  rgb-state-person-zone-color: var(--rgb-warning-color)
+  rgb-state-remote-color: var(--rgb-primary-color)
+  rgb-state-script-color: var(--rgb-primary-color)
+  rgb-state-sensor-battery-high-color: var(--rgb-success-color)
+  rgb-state-sensor-battery-low-color: var(--rgb-error-color)
+  rgb-state-sensor-battery-medium-color: var(--rgb-warning-color)
+  rgb-state-siren-color: var(--rgb-error-color)
+  rgb-state-sun-day-color: var(--rgb-primary-color)
+  rgb-state-sun-night-color: var(--rgb-secondary-background-color)
+  rgb-state-switch-color: var(--rgb-primary-color)
+  rgb-state-timer-color: var(--rgb-primary-color)
+  rgb-state-update-color: var(--rgb-success-color)
+  rgb-state-update-installing-color: var(--rgb-warning-color)
+  rgb-state-vacuum-color: var(--rgb-primary-color)
 
 ________________________________________Common Base 2 (Do Not Use):
 
