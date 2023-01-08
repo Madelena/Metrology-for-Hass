@@ -488,6 +488,314 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       .entities {
         align-items: flex-start !important;
       }
+      ha-card.type-button.tile, ha-card.type-entity.tile, ha-card.type-light.tile, ha-card.type-thermostat.tile, ha-card.type-gauge.tile, :host([narrow]) ha-card.type-weather-forecast.tile {
+        aspect-ratio: 1;
+      }
+      ha-card.type-button.tile.wide, ha-card.type-entity.tile.wide, ha-card.type-light.tile.wide, ha-card.type-thermostat.tile.wide, ha-card.type-gauge.tile.wide, :host([narrow]) ha-card.type-weather-forecast.tile.wide {
+        aspect-ratio: 2;
+      }
+      ha-card.type-area: {
+        padding-bottom: 100%;
+      }
+      ha-card.type-button.tile:has(ha-state-icon[data-state="on"]) {
+        background: var(--primary-color);
+      }
+      ha-card.type-button.tile ha-state-icon {
+        width: 33%;
+      }
+      ha-card.type-button.tile ha-state-icon[data-state="on"] {
+        color: var(--primary-text-color) !important;
+      }
+      ha-card.type-button.tile .state {
+        color: var(--secondary-text-color) !important;
+        font-size: var(--body-font-size);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+        padding: 12px;
+        width: 33%;
+      }
+      ha-card.type-button.tile ha-state-icon + span, ha-card.type-light.tile #info, ha-card.type-thermostat.tile #info, ha-card.type-gauge.tile .name {
+        font-size: var(--body-font-size);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: left;
+        padding: 12px;
+        width: calc(100% - 24px);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      ha-card.type-entity.tile {
+        flex-direction: column-reverse;
+        overflow: hidden;
+      }
+      ha-card.type-entity.tile .header {
+        position: absolute;
+        padding: 8px 16px 12px;
+        bottom: 0;
+        width: calc(100% - 24px);
+      }
+      ha-card.type-entity.tile .info {
+        order: 3;
+        padding-top: 12px;
+        margin-top: 0;
+      }
+      ha-card.type-entity.tile:not(.large) .value {
+        font-size: var(--h2-font-size);
+      }
+      ha-card.type-entity.tile hui-graph-header-footer {
+        border-bottom: 48px solid rgba(var(--rgb-accent-color), .1);
+      }
+      ha-card.type-light.tile .brightness {
+        color: var(--secondary-text-color);
+        font-size: var(--body-font-size);
+        position: absolute;
+        right: 12px;
+      }
+      ha-card.type-light.tile #slider, ha-card.type-thermostat.tile #slider {
+        max-width: inherit !important;
+        min-width: inherit !important;
+      }
+      ha-card.type-thermostat.tile #slider-center {
+        width: 75%;
+        height: 75%;
+        left: 12.5%;
+        top: 12.5%;
+      }
+      ha-card.type-light.tile #slider ha-icon-button {
+        width: 40%;
+      }
+      ha-card.type-gauge.tile ha-gauge {
+        max-width: none;
+        padding-bottom: 50%;
+      }
+      ha-card.type-thermostat.tile #info #modes {
+        text-align: center;
+      }
+      ha-card.type-thermostat.tile #slider-center #temperature text, ha-card.type-gauge.tile .value-text {
+        font-weight: 100;
+      }
+      ha-card.type-area .bottom {
+        align-items: flex-end;
+      }
+      ha-card.type-area .sensors {
+        font-size: var(--body-font-size);
+        display: flex;
+        --mdc-icon-size: 16px;
+        align-items: flex-end;
+        gap: 8px;
+      }
+      ha-card.type-picture-entity .footer {
+        background: linear-gradient(to bottom, rgba(var(--rgb-primary-background-color),.75), transparent);
+        text-align: left;
+        top: 0;
+        bottom: auto;
+        padding: 12px 16px 48px;
+        font-size: var(--body-font-size);
+      }
+      ha-card.type-picture-entity .footer.both {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      ha-card.type-picture-entity .footer.both div:nth-child(2) {
+        font-size: var(--h1-font-size);
+        font-weight: var(--h1-font-weight);
+        line-height: 1.4 !important;
+      }
+      ha-card.type-picture-glance .box {
+        padding: 16px;
+        background: linear-gradient(to top, rgba(var(--rgb-primary-background-color),.75), transparent);
+      }
+      ha-card.type-picture-glance .title {
+        font-size: var(--body-font-size);
+        font-weight: var(--body-font-weight);
+        margin-left: 0;
+      }
+      ha-card.type-picture-glance .row:nth-child(3) {
+        display: none;
+      }
+      ha-card.type-media-control.tile {
+        aspect-ratio: 1
+      }
+      ha-card.type-media-control.tile .no-img {
+        width: 100% !important;
+      }
+      ha-card.type-media-control.tile .player {
+        flex-direction: column-reverse;
+        padding-bottom: 16px !important;
+      }
+      ha-card.type-media-control.tile .title-controls {
+        padding-top: 0;
+        padding-right: 24px;
+      }
+      ha-card.type-media-control.tile .media-info {
+        padding-bottom: 4px;
+      }
+      ha-card.type-media-control.tile .controls {
+        margin-left: 0 !important;
+        padding-inline-end: 0 !important;
+      }
+      ha-card.type-media-control .icon-name {
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+      }
+      ha-card.type-media-control.tile .icon-name ha-state-icon {
+        padding-right: 0;
+      }
+      ha-card.type-weather-forecast.tile {
+        justify-content: space-between;
+      }
+      ha-card.type-weather-forecast.tile .content {
+        flex-direction: row-reverse;
+      }
+      ha-card.type-weather-forecast.tile .icon-image {
+        margin-left: 16px;
+        margin-right: 0;
+      }
+      :host([narrow]) ha-card.type-weather-forecast.tile .info {
+        padding-top: 0;
+        flex-direction: column;
+      }
+      ha-card.type-weather-forecast.tile .info {
+        padding-top: 0;
+      }
+      ha-card.type-weather-forecast.tile .state, ha-card.type-weather-forecast.tile .temp-attribute .temp {
+        font-size: var(--h1-font-size);
+        line-height: 1.4;
+        font-weight: var(--h1-font-weight);
+      }
+      ha-card.type-weather-forecast.tile .name-state {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      :host([narrow]) ha-card.type-weather-forecast.tile .state {
+        font-size: var(--h1-font-size) !important;
+      }
+      ha-card.type-weather-forecast.tile .temp-attribute { 
+        display: flex;
+        align-self: flex-end;
+      }
+      :host([narrow]) ha-card.type-weather-forecast.tile .temp-attribute { 
+        text-align: left;
+        flex-direction: row;
+        display: flex;
+        align-self: flex-start;
+      }
+      ha-card.type-weather-forecast.tile .temp-attribute .temp {
+        font-size: var(--body-font-size);
+        font-weight: var(--body-font-weight);
+      }
+      :host([narrow]) ha-card.type-weather-forecast.tile .temp-attribute .temp {
+        font-size: var(--body-font-size);
+        font-weight: var(--body-font-weight);
+        padding-right: 8px;
+      }
+      ha-card.type-weather-forecast.tile .temp-attribute .temp span {
+        font-size: var(--body-font-size) !important;
+        font-weight: var(--body-font-weight) !important;
+        color: var(--secondary-text-color);
+        top: auto;
+      }
+      ha-card.type-weather-forecast.tile .name, ha-card.type-weather-forecast.tile .attribute {
+        font-size: var(--body-font-size) !important;
+        line-height: var(--body-line-height);
+      }
+      ha-card.type-markdown.header {
+        background: none;
+      }
+    $: |
+      .card-header, .card-header .name, :host ::slotted(.card-header), ha-card.type-area .name, ha-card.type-picture-entity .footer {
+        font-size: var(--card-title-font-size) !important;
+        line-height: var(--card-title-line-height) !important;
+        font-weight: var(--card-title-font-weight) !important;
+        letter-spacing: 0;
+      }
+    ha-full-calendar$: |
+      .header h1 {
+        font-size: var(--card-title-font-size);
+        line-height: var(--card-title-line-height);
+        font-weight: var(--card-title-font-weight);
+        letter-spacing: 0;
+      }
+    statistics-chart$ha-chart-base$: |
+      .chartLegend {
+        font-size: var(--h6-font-size);
+        text-transform: uppercase;
+        font-weight: var(--h6-font-weight);
+        text-align: left !important;
+        padding-bottom: 16px;
+      }
+      .chartLegend .bullet, .chartTooltip .bullet {
+        border-radius: 0px;
+        border-width: 4px;
+        height: 8px;
+        width: 8px;
+      }
+    state-history-charts$state-history-chart-line$ha-chart-base$: |
+      .chartLegend {
+        font-size: var(--h6-font-size);
+        text-transform: uppercase;
+        font-weight: var(--h6-font-weight);
+        text-align: left !important;
+        padding-bottom: 16px;
+      }
+      .chartLegend .bullet, .chartTooltip .bullet {
+        border-radius: 0px;
+        border-width: 4px;
+        height: 8px;
+        width: 8px;
+      }
+    ha-gauge$: |
+      .dial, .value {
+        stroke-width: 4 !important;
+      }
+      .dial {
+        stroke: var(--secondary-background-color) !important;
+      }
+      .text {
+        top: 42%;
+        font-weight: 100;
+      }
+      .value-text {
+        font-size: var(--h1-font-size);
+      }
+    ha-markdown$: |
+      h1 {
+        font-size: var(--title-font-size);
+        font-weight: var(--title-font-weight);
+        line-height: var(--title-line-height);
+      }
+      h2 {
+        font-size: var(--h2-font-size);
+        font-weight: var(--h2-font-weight);
+        line-height: var(--h2-line-height);
+      }
+      h3 {
+        font-size: var(--h3-font-size);
+        font-weight: var(--h3-font-weight);
+        line-height: var(--h3-line-height);
+      }
+      h4 {
+        font-size: var(--h4-font-size);
+        font-weight: var(--h4-font-weight);
+        line-height: var(--h4-line-height);
+      }
+      h5 {
+        font-size: var(--subtitle-font-size);
+        font-weight: var(--subtitle-font-weight);
+        line-height: var(--subtitle-line-height);
+      }
+      h6 {
+        font-size: var(--h6-font-size);
+        font-weight: var(--h6-font-weight);
+        line-height: var(--h6-line-height);
+        color: var(--secondary-text-color);
+      }
+
 
   card-mod-glance-yaml: &card-mod-glance |
     .: |
