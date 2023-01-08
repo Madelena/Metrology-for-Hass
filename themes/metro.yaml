@@ -719,6 +719,7 @@ ________________________________________Common Base 5 (Do Not Use):
       ha-dialog-border-radius: "8px"
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 4px      
+      mdc-shape-small: 4px
 
       mdc-theme-surface: var(--primary-background-color)
       rgb-mdc-theme-surface: var(--rgb-primary-background-color)
@@ -733,6 +734,7 @@ ________________________________________Common Base 5 (Do Not Use):
       ha-dialog-border-radius: "8px"
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 4px
+      mdc-shape-small: 4px
 
       mdc-theme-surface: var(--card-background-color)
       rgb-mdc-theme-surface: var(--rgb-card-background-color)
