@@ -592,8 +592,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
           }
     ha-more-info-info:
       $:
-    ha-more-info-history:
-                  $: |
+        ha-more-info-history:
+          $: |
             state-history-charts, statistics-chart {
               filter: hue-rotate(calc(var(--hue-primary-color) - 212deg)) saturate(3) brightness(0.66)
                     }
