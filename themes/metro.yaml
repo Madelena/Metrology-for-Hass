@@ -442,52 +442,52 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       
   card-mod-card-yaml: &card-mod-card |
     .: |
-    ha-card {
-      --mdc-icon-size: 20px
-    }
-    ha-card .value {
-      font-size: var(--h1-font-size);
-      font-weight: var(--h1-font-weight);
-      margin-right: 0;
-    }
-    ha-card .name {
-      font-size: var(--body-font-size);
-      line-height: var(--body-line-height);
-      font-weight: var(--body-font-weight);
-      color: var(--primary-text-color);
-    }
-    ha-card .info {
-      line-height: 32px;
-      padding-top: 8px;
-    }
-    ha-card .header {
-      padding-top: 16px !important;
-    }
-    .icon {
-      line-height: 16px !important;
-    }
-    ha-card .measurement {
-      font-size: var(--h6-font-size);
-      font-weight: 700;
-      color: var(--secondary-text-color);
-      text-transform: uppercase;
-    }
+      ha-card {
+        --mdc-icon-size: 20px
+      }
+      ha-card .value {
+        font-size: var(--h1-font-size);
+        font-weight: var(--h1-font-weight);
+        margin-right: 0;
+      }
+      ha-card .name {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        font-weight: var(--body-font-weight);
+        color: var(--primary-text-color);
+      }
+      ha-card .info {
+        line-height: 32px;
+        padding-top: 8px;
+      }
+      ha-card .header {
+        padding-top: 16px !important;
+      }
+      .icon {
+        line-height: 16px !important;
+      }
+      ha-card .measurement {
+        font-size: var(--h6-font-size);
+        font-weight: 700;
+        color: var(--secondary-text-color);
+        text-transform: uppercase;
+      }
       .card-header, .card-header .name, :host ::slotted(.card-header), ha-card.type-area .name, ha-card.type-picture-entity .footer.single, ha-card.type-media-control hui-marquee {
         font-size: var(--card-title-font-size) !important;
         line-height: var(--card-title-line-height) !important;
         font-weight: var(--card-title-font-weight) !important;
-      letter-spacing: 0;
-    }
+        letter-spacing: 0;
+      }
       .card-header, :host ::slotted(.card-header) {
-      margin-bottom: 8px;
-      padding: 12px 16px;
-    }
-    :host ::slotted(.card-content:not(:first-child)), slot:not(:first-child)::slotted(.card-content) {
-      margin-top: 0;
-    }
-    .entities {
-      align-items: flex-start !important;
-    }
+        margin-bottom: 8px;
+        padding: 12px 16px;
+      }
+      :host ::slotted(.card-content:not(:first-child)), slot:not(:first-child)::slotted(.card-content) {
+        margin-top: 0;
+      }
+      .entities {
+        align-items: flex-start !important;
+      }
 
   card-mod-glance-yaml: &card-mod-glance |
     .: |
