@@ -358,7 +358,9 @@ ________________________________________Common Base 2 (Do Not Use):
       primary-text-color: "rgb(255,255,255)"
       rgb-primary-text-color: "255,255,255"
       secondary-text-color: "rgba(255,255,255,.75)"
+      rgb-secondary-text-color: "192,192,192"
       disabled-text-color: "rgba(255,255,255,.55)"
+      rgb-disabled-text-color: "140,140,140"
 
       # Other Mode Specific Variables
       mdc-dialog-scrim-color: "rgba(0, 0, 0, 0.5)"
@@ -383,7 +385,9 @@ ________________________________________Common Base 2 (Do Not Use):
       primary-text-color: "rgba(0,0,0,.95)"
       rgb-primary-text-color: "0,0,0"
       secondary-text-color: "rgba(0,0,0,.66)"
+      rgb-secondary-text-color: "84,84,84"
       disabled-text-color: "rgba(0,0,0,.6)"
+      rgb-disabled-text-color: "152,152,152"
 
       # Other Mode Specific Variables
       mdc-dialog-scrim-color: rgba(var(--rgb-primary-background-color),.667)
@@ -664,6 +668,7 @@ ________________________________________Common Base 4 (Do Not Use):
       primary-background-color: "rgb(0,0,0)"
       rgb-primary-background-color: "0,0,0"
       secondary-background-color: "rgb(24,24,24)"
+      rgb-secondary-background-color: "24,24,24"
       card-background-color: "rgb(19,19,19)"
       rgb-card-background-color: "19,19,19"
 
@@ -684,6 +689,7 @@ ________________________________________Common Base 4 (Do Not Use):
       primary-background-color: "rgb(255,255,255)"
       rgb-primary-background-color: "255,255,255"
       secondary-background-color: "rgb(232,232,232)"
+      rgb-secondary-background-color: "232,232,232"
       card-background-color: "rgba(247,247,247)"
       rgb-card-background-color: "247,247,247"
 
@@ -781,12 +787,14 @@ Fluent Red:
       primary-background-color: "rgb(27,24,25)"
       rgb-primary-background-color: "27,24,25"
       secondary-background-color: "rgb(67,61,63)"
+      rgb-secondary-background-color: "67,61,63"
       card-background-color: "rgb(40,36,38)"
       rgb-card-background-color: "40,36,38"
 
     light:
       <<: *fluent-common-light
       secondary-background-color: "rgb(249,210,226)"
+      rgb-secondary-background-color: "249,210,226"
       card-background-color: "rgb(245,239,242)"
       rgb-card-background-color: "245,239,242"
 
@@ -830,12 +838,14 @@ Fluent Blue:
       primary-background-color: "rgb(24,26,27)"
       rgb-primary-background-color: "24,26,27"
       secondary-background-color: "rgb(57,64,70)"
+      rgb-secondary-background-color: "57,64,70"
       card-background-color: "rgb(36,38,40)"
       rgb-card-background-color: "36,38,40"
 
     light: 
       <<: *fluent-common-light
       secondary-background-color: "rgb(210,231,249)"
+      rgb-secondary-background-color: "210,231,249"
       card-background-color: "rgb(239,243,245)"
       rgb-card-background-color: "239,243,245"
 
@@ -879,12 +889,14 @@ Fluent Green:
       primary-background-color: "rgb(24,27,26)"
       rgb-primary-background-color: "24,27,26"
       secondary-background-color: "rgb(57,70,64)"
+      rgb-secondary-background-color: "57,70,64"
       card-background-color: "rgb(36,40,38)"
       rgb-card-background-color: "36,40,38"
 
     light: 
       <<: *fluent-common-light
       secondary-background-color: "rgb(210,249,231)"
+      rgb-secondary-background-color: "210,249,231"
       card-background-color: "rgb(239,245,243)"
       rgb-card-background-color: "239,245,243"
 
@@ -928,12 +940,14 @@ Fluent Orange:
       primary-background-color: "rgb(27,26,24)"
       rgb-primary-background-color: "27,26,24"
       secondary-background-color: "rgb(70,64,57)"
+      rgb-secondary-background-color: "70,64,57"
       card-background-color: "rgb(40,38,36)"
       rgb-card-background-color: "40,38,36"
 
     light: 
       <<: *fluent-common-light
       secondary-background-color: "rgb(249,231,210)"
+      rgb-secondary-background-color: "249,231,210"
       card-background-color: "rgb(245,243,239)"
       rgb-card-background-color: "245,243,239"
 
@@ -977,12 +991,14 @@ Fluent Purple:
       primary-background-color: "rgb(26,24,27)" # hsl(hue,5,10)
       rgb-primary-background-color: "26,24,27"
       secondary-background-color: "rgb(64,57,70)" # hsl(hue,10,25)
+      rgb-secondary-background-color: "64,57,70"
       card-background-color: "rgb(38,36,40)" # hsl(hue,5,15)
       rgb-card-background-color: "38,36,40"
 
     light: 
       <<: *fluent-common-light
       secondary-background-color: "rgb(230,210,249)" # hsl(hue,75,90)
+      rgb-secondary-background-color: "230,210,249"
       card-background-color: "rgb(242,239,245)" # hsl(hue,25,95)
       rgb-card-background-color: "242,239,245"
 
@@ -1029,12 +1045,14 @@ Fluent Slate:
       primary-background-color: "rgb(24,25,27)"
       rgb-primary-background-color: "24,25,27"
       secondary-background-color: "rgb(57,63,70)"
+      rgb-secondary-background-color: "57,63,70"
       card-background-color: "rgb(36,38,40)"
       rgb-card-background-color: "36,38,40"
 
     light:
       <<: *fluent-common-light
       secondary-background-color: "rgb(223,229,236)"
+      rgb-secondary-background-color: "223,229,236"
       card-background-color: "rgb(240,242,244)"
       rgb-card-background-color: "240,242,244"
 
