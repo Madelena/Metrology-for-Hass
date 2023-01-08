@@ -529,7 +529,7 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       .content {
         xmargin-top: -8px;
       }
-    state-card-display$: |
+    ha-more-info-info$state-card-display$: |
       .state {
         margin-left: 46px !important;
         font-size: var(--h1-font-size);
@@ -541,7 +541,7 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         flex-direction: column-reverse !important;
       }
       state-info { margin-left: -8px; margin-top: -42px; }
-    state-card-display$state-info$: |
+    ha-more-info-info$state-card-display$state-info$: |
       .name { display: none; }
       .time-ago { margin-top: 42px; 
         font-size: var(--h6-font-size);
@@ -555,7 +555,7 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       state-badge[icon] {
         margin: 0 0 0 8px !important;
       }
-    more-info-default$ha-attributes$: |
+    ha-more-info-info$more-info-default$ha-attributes$: |
       .data-entry { flex-direction: column !important; }
       .key {
         font-size: var(--h6-font-size);
@@ -570,22 +570,21 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         margin-bottom: 16px;
         max-width: none !important;
       }
+      .data-entry:last-child .value {
+        margin-bottom: 0;
+      }      
     ha-more-info-history$state-history-charts:
       $:
         state-history-chart-timeline$: |
           .chartTooltip {
             margin-top: -200px;
           }
-    ha-more-info-history:
+    ha-more-info-info:
       $:
-        state-history-charts:
-          $:
-            state-history-chart-line:
-              $:
-                ha-chart-base:
+    ha-more-info-history:
                   $: |
-                    .chartContainer {
-                      filter: hue-rotate(var(--hue-primary-color)) saturate(3) brightness(0.66)
+            state-history-charts, statistics-chart {
+              filter: hue-rotate(calc(var(--hue-primary-color) - 212deg)) saturate(3) brightness(0.66)
                     }
 
   card-mod-root-yaml: &card-mod-root |
