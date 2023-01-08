@@ -123,6 +123,14 @@ ________________________________________Common Base (Do Not Use): &common-colors
   material-caption-font-size: 0.7rem
   material-button-font-size: 1rem
 
+  # Disabled this because without button borders, the buttons have bad affordance.
+  # mdc-typography-button-font-size: var(--body-font-size)
+  # mdc-typography-button-line-height: var(--body-line-height)
+  # mdc-typography-button-font-weight: var(--body-font-weight)
+  # mdc-typography-button-letter-spacing: 0
+  # mdc-typography-button-text-decoration: none
+  # mdc-typography-button-text-transform: none
+
   mush-title-font-size: var(--title-font-size)
   mush-title-font-weight: 600
   mush-title-padding: 24px 16px 16px
@@ -265,6 +273,7 @@ ________________________________________Common Base (Do Not Use): &common-colors
   btn-bg-color-off: var(--primary-background-color)
   mdc-button-disabled-fill-color: var(--disabled-color)
   mdc-button-disabled-ink-color: var(--disabled-text-color)
+  # mdc-button-raised-box-shadow: 
 
   # Home Assistant override
   ha-card-box-shadow: "none"
@@ -658,6 +667,9 @@ ________________________________________Common Base 4 (Do Not Use):
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 0px
 
+      mdc-button-raised-box-shadow: none
+      mdc-button-raised-box-shadow-hover: none
+
       mdc-theme-surface: "rgb(24,24,24)"
       rgb-mdc-theme-surface: "24,24,24"
 
@@ -674,6 +686,9 @@ ________________________________________Common Base 4 (Do Not Use):
       ha-dialog-border-radius: 0
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 0px
+
+      mdc-button-raised-box-shadow: none
+      mdc-button-raised-box-shadow-hover: none
 
       mdc-theme-surface: var(--primary-background-color)
       rgb-mdc-theme-surface: var(--rgb-primary-background-color)
