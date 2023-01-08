@@ -657,8 +657,8 @@ ________________________________________Common Base 4 (Do Not Use):
       primary-background-color: "rgb(0,0,0)"
       rgb-primary-background-color: "0,0,0"
       secondary-background-color: "rgb(24,24,24)"
-      card-background-color: "rgba(255,255,255,.075)"
-      rgb-card-background-color: "255,255,255"
+      card-background-color: "rgb(19,19,19)"
+      rgb-card-background-color: "19,19,19"
 
       ha-card-border-radius: 0
       ha-config-card-border-radius: 0
@@ -677,8 +677,8 @@ ________________________________________Common Base 4 (Do Not Use):
       primary-background-color: "rgb(255,255,255)"
       rgb-primary-background-color: "255,255,255"
       secondary-background-color: "rgb(232,232,232)"
-      card-background-color: "rgba(0,0,0,.033)"
-      rgb-card-background-color: "0,0,0"
+      card-background-color: "rgba(247,247,247)"
+      rgb-card-background-color: "247,247,247"
 
       ha-card-border-radius: 0
       ha-config-card-border-radius: 0
