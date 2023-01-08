@@ -84,7 +84,11 @@ ________________________________________Common Base (Do Not Use): &common-colors
   card-title-font-weight: 600
   card-title-line-height: normal
   title-font-size: 3.5rem
+  title-font-weight: 600
+  title-line-height: normal
   subtitle-font-size: 1rem
+  subtitle-font-weight: 600
+  subtitle-line-height: normal
   small-font-size: 0.9rem
   
   h1-font-size: 2.85rem
@@ -109,6 +113,8 @@ ________________________________________Common Base (Do Not Use): &common-colors
   h4-font: "var(--h4-font-weight) var(--h4-font-size) var(--display-font-stack)"
   h5-font: "var(--h5-font-weight) var(--h5-font-size) var(--font-stack)"
   h6-font: "var(--h6-font-weight) var(--h6-font-size) var(--font-stack)"
+
+  ha-card-header-font-size: var(--card-title-font-size)
 
   paper-font-headline_-_font-size: 3.5rem
   paper-font-headline_-_font-weight: 600
@@ -430,7 +436,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         font-weight: 400;
       }
       
-  card-mod-card: &card-mod-card |
+  card-mod-card-yaml: &card-mod-card |
+    .: |
     ha-card {
       --mdc-icon-size: 20px
     }
@@ -461,13 +468,13 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       color: var(--secondary-text-color);
       text-transform: uppercase;
     }
-    .card-header, .card-header .name {
-      font-size: var(--card-title-font-size);
-      line-height: var(--card-title-line-height);
-      font-weight: var(--card-title-font-weight);
+      .card-header, .card-header .name, :host ::slotted(.card-header), ha-card.type-area .name, ha-card.type-picture-entity .footer.single, ha-card.type-media-control hui-marquee {
+        font-size: var(--card-title-font-size) !important;
+        line-height: var(--card-title-line-height) !important;
+        font-weight: var(--card-title-font-weight) !important;
       letter-spacing: 0;
     }
-    .card-header {
+      .card-header, :host ::slotted(.card-header) {
       margin-bottom: 8px;
       padding: 12px 16px;
     }
