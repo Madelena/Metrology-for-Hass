@@ -765,7 +765,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         text-align: left !important;
         padding-bottom: 16px;
       }
-      .chartLegend .bullet, .chartTooltip .bullet {
+      .chartLegend .bullet,
+      .chartTooltip .bullet {
         border-radius: 0px;
         border-width: 4px;
         height: 8px;
@@ -779,7 +780,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         text-align: left !important;
         padding-bottom: 16px;
       }
-      .chartLegend .bullet, .chartTooltip .bullet {
+      .chartLegend .bullet,
+      .chartTooltip .bullet {
         border-radius: 0px;
         border-width: 4px;
         height: 8px;
