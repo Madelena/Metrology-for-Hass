@@ -25,9 +25,11 @@ ________________________________________Common Base (Do Not Use): &common-colors
   error-color: "#FF4400"
   rgb-error-color: "255,64,0"
   warning-color: "#ffa600"
+  rgb-warning-color: "255,166,0"
   success-color: "#008a17"
-  rgb-success-color: "0, 138, 23"
+  rgb-success-color: "0,138,23"
   info-color: "#039be5"
+  rgb-info-color: "3,155,229"
 
   # Main Interface Colors
   lovelace-background: var(--primary-background-color)
@@ -82,7 +84,11 @@ ________________________________________Common Base (Do Not Use): &common-colors
   card-title-font-weight: 600
   card-title-line-height: normal
   title-font-size: 3.5rem
+  title-font-weight: 600
+  title-line-height: normal
   subtitle-font-size: 1rem
+  subtitle-font-weight: 600
+  subtitle-line-height: normal
   small-font-size: 0.9rem
   
   h1-font-size: 2.85rem
@@ -108,6 +114,8 @@ ________________________________________Common Base (Do Not Use): &common-colors
   h5-font: "var(--h5-font-weight) var(--h5-font-size) var(--font-stack)"
   h6-font: "var(--h6-font-weight) var(--h6-font-size) var(--font-stack)"
 
+  ha-card-header-font-size: var(--card-title-font-size)
+
   paper-font-headline_-_font-size: 3.5rem
   paper-font-headline_-_font-weight: 600
   paper-font-headline_-_letter-spacing: 0
@@ -120,6 +128,14 @@ ________________________________________Common Base (Do Not Use): &common-colors
   material-small-font-size: 0.875rem
   material-caption-font-size: 0.7rem
   material-button-font-size: 1rem
+
+  # Disabled this because without button borders, the buttons have bad affordance.
+  # mdc-typography-button-font-size: var(--body-font-size)
+  # mdc-typography-button-line-height: var(--body-line-height)
+  # mdc-typography-button-font-weight: var(--body-font-weight)
+  # mdc-typography-button-letter-spacing: 0
+  # mdc-typography-button-text-decoration: none
+  # mdc-typography-button-text-transform: none
 
   mush-title-font-size: var(--title-font-size)
   mush-title-font-weight: 600
@@ -144,7 +160,6 @@ ________________________________________Common Base (Do Not Use): &common-colors
 
   mdc-icon-size: 24px
   header-height: 56px
-  mdc-shape-small: 0
 
   expansion-panel-summary-padding: 0
   expansion-panel-content-padding: 0
@@ -263,6 +278,7 @@ ________________________________________Common Base (Do Not Use): &common-colors
   btn-bg-color-off: var(--primary-background-color)
   mdc-button-disabled-fill-color: var(--disabled-color)
   mdc-button-disabled-ink-color: var(--disabled-text-color)
+  # mdc-button-raised-box-shadow: 
 
   # Home Assistant override
   ha-card-box-shadow: "none"
@@ -277,6 +293,55 @@ ________________________________________Common Base (Do Not Use): &common-colors
   # Video
   video-max-height: none
 
+  # States
+  rgb-state-default-color: var(--rgb-accent-color)
+  rgb-state-inactive-color: var(--rgb-secondary-background-color)
+  rgb-state-unavailable-color: var(--rgb-disabled-text-color)
+  rgb-state-alarm-armed-color: var(--rgb-success-color)
+  rgb-state-alarm-arming-color: var(--rgb-warning-color)
+  rgb-state-alarm-disarmed-color: var(--rgb-secondary-background-color)
+  rgb-state-alarm-pending-color: var(--rgb-warning-color)
+  rgb-state-alarm-triggered-color: var(--rgb-error-color)
+  rgb-state-alert-color: var(--rgb-error-color)
+  rgb-state-automation-color: var(--rgb-primary-color)
+  rgb-state-binary-sensor-alerting-color: var(--rgb-error-color)
+  rgb-state-binary-sensor-color: var(--rgb-primary-color)
+  rgb-state-calendar-color: var(--rgb-primary-color)
+  rgb-state-camera-color: var(--rgb-primary-color)
+  rgb-state-climate-auto-color: var(--rgb-success-color)
+  rgb-state-climate-cool-color: var(--rgb-blue-color)
+  rgb-state-climate-dry-color: var(--rgb-warning-color)
+  rgb-state-climate-fan-only-color: var(--rgb-cyan-color)
+  rgb-state-climate-heat-color: var(--rgb-deep-orange-color)
+  rgb-state-climate-heat-cool-color: var(--rgb-primary-color)
+  rgb-state-climate-idle-color: var(--rgb-secondary-background-color)
+  rgb-state-cover-color: var(--rgb-purple-color)
+  rgb-state-fan-color: var(--rgb-cyan-color)
+  rgb-state-group-color: var(--rgb-primary-color)
+  rgb-state-humidifier-color: var(--rgb-blue-color)
+  rgb-state-input-boolean-color: var(--rgb-primary-color)
+  rgb-state-light-color: var(--rgb-primary-color)
+  rgb-state-lock-jammed-color: var(--rgb-error-color)
+  rgb-state-lock-locked-color: var(--rgb-success-color)
+  rgb-state-lock-pending-color: var(--rgb-warning-color)
+  rgb-state-lock-unlocked-color: var(--rgb-error-color)
+  rgb-state-media-player-color: var(--rgb-primary-color)
+  rgb-state-person-home-color: var(--rgb-success-color)
+  rgb-state-person-not-home-color: var(--rgb-secondary-background-color)
+  rgb-state-person-zone-color: var(--rgb-warning-color)
+  rgb-state-remote-color: var(--rgb-primary-color)
+  rgb-state-script-color: var(--rgb-primary-color)
+  rgb-state-sensor-battery-high-color: var(--rgb-success-color)
+  rgb-state-sensor-battery-low-color: var(--rgb-error-color)
+  rgb-state-sensor-battery-medium-color: var(--rgb-warning-color)
+  rgb-state-siren-color: var(--rgb-error-color)
+  rgb-state-sun-day-color: var(--rgb-primary-color)
+  rgb-state-sun-night-color: var(--rgb-secondary-background-color)
+  rgb-state-switch-color: var(--rgb-primary-color)
+  rgb-state-timer-color: var(--rgb-primary-color)
+  rgb-state-update-color: var(--rgb-success-color)
+  rgb-state-update-installing-color: var(--rgb-warning-color)
+  rgb-state-vacuum-color: var(--rgb-primary-color)
 
 ________________________________________Common Base 2 (Do Not Use):
 
@@ -292,7 +357,9 @@ ________________________________________Common Base 2 (Do Not Use):
       primary-text-color: "rgb(255,255,255)"
       rgb-primary-text-color: "255,255,255"
       secondary-text-color: "rgba(255,255,255,.75)"
+      rgb-secondary-text-color: "192,192,192"
       disabled-text-color: "rgba(255,255,255,.55)"
+      rgb-disabled-text-color: "140,140,140"
 
       # Other Mode Specific Variables
       mdc-dialog-scrim-color: "rgba(0, 0, 0, 0.5)"
@@ -317,7 +384,9 @@ ________________________________________Common Base 2 (Do Not Use):
       primary-text-color: "rgba(0,0,0,.95)"
       rgb-primary-text-color: "0,0,0"
       secondary-text-color: "rgba(0,0,0,.66)"
+      rgb-secondary-text-color: "84,84,84"
       disabled-text-color: "rgba(0,0,0,.6)"
+      rgb-disabled-text-color: "152,152,152"
 
       # Other Mode Specific Variables
       mdc-dialog-scrim-color: rgba(var(--rgb-primary-background-color),.667)
@@ -370,53 +439,54 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         font-weight: 400;
       }
       
-  card-mod-card: &card-mod-card |
-    ha-card {
-      --mdc-icon-size: 20px
-    }
-    ha-card .value {
-      font-size: var(--h1-font-size);
-      font-weight: var(--h1-font-weight);
-      margin-right: 0;
-    }
-    ha-card .name {
-      font-size: var(--body-font-size);
-      line-height: var(--body-line-height);
-      font-weight: var(--body-font-weight);
-      color: var(--primary-text-color);
-    }
-    ha-card .info {
-      line-height: 32px;
-      padding-top: 8px;
-    }
-    ha-card .header {
-      padding-top: 16px !important;
-    }
-    .icon {
-      line-height: 16px !important;
-    }
-    ha-card .measurement {
-      font-size: var(--h6-font-size);
-      font-weight: 700;
-      color: var(--secondary-text-color);
-      text-transform: uppercase;
-    }
-    .card-header, .card-header .name {
-      font-size: var(--card-title-font-size);
-      line-height: var(--card-title-line-height);
-      font-weight: var(--card-title-font-weight);
-      letter-spacing: 0;
-    }
-    .card-header {
-      margin-bottom: 8px;
-      padding: 12px 16px;
-    }
-    :host ::slotted(.card-content:not(:first-child)), slot:not(:first-child)::slotted(.card-content) {
-      margin-top: 0;
-    }
-    .entities {
-      align-items: flex-start !important;
-    }
+  card-mod-card-yaml: &card-mod-card |
+    .: |
+      ha-card {
+        --mdc-icon-size: 20px
+      }
+      ha-card .value {
+        font-size: var(--h1-font-size);
+        font-weight: var(--h1-font-weight);
+        margin-right: 0;
+      }
+      ha-card .name {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        font-weight: var(--body-font-weight);
+        color: var(--primary-text-color);
+      }
+      ha-card .info {
+        line-height: 32px;
+        padding-top: 8px;
+      }
+      ha-card .header {
+        padding-top: 16px !important;
+      }
+      .icon {
+        line-height: 16px !important;
+      }
+      ha-card .measurement {
+        font-size: var(--h6-font-size);
+        font-weight: 700;
+        color: var(--secondary-text-color);
+        text-transform: uppercase;
+      }
+      .card-header, .card-header .name, :host ::slotted(.card-header), ha-card.type-area .name, ha-card.type-picture-entity .footer.single, ha-card.type-media-control hui-marquee {
+        font-size: var(--card-title-font-size) !important;
+        line-height: var(--card-title-line-height) !important;
+        font-weight: var(--card-title-font-weight) !important;
+        letter-spacing: 0;
+      }
+      .card-header, :host ::slotted(.card-header) {
+        margin-bottom: 8px;
+        padding: 12px 16px;
+      }
+      :host ::slotted(.card-content:not(:first-child)), slot:not(:first-child)::slotted(.card-content) {
+        margin-top: 0;
+      }
+      .entities {
+        align-items: flex-start !important;
+      }
 
   card-mod-glance-yaml: &card-mod-glance |
     .: |
@@ -446,7 +516,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
           background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
         }
       }
-      .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
+      .mdc-dialog .mdc-dialog__container .mdc-dialog__surface,
+      .mdc-dialog .mdc-dialog__content {
         overflow: visible;
       }
       .mdc-dialog__surface {
@@ -469,7 +540,7 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       .content {
         xmargin-top: -8px;
       }
-    state-card-display$: |
+    ha-more-info-info$state-card-display$: |
       .state {
         margin-left: 46px !important;
         font-size: var(--h1-font-size);
@@ -481,7 +552,7 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         flex-direction: column-reverse !important;
       }
       state-info { margin-left: -8px; margin-top: -42px; }
-    state-card-display$state-info$: |
+    ha-more-info-info$state-card-display$state-info$: |
       .name { display: none; }
       .time-ago { margin-top: 42px; 
         font-size: var(--h6-font-size);
@@ -495,7 +566,7 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       state-badge[icon] {
         margin: 0 0 0 8px !important;
       }
-    more-info-default$ha-attributes$: |
+    ha-more-info-info$more-info-default$ha-attributes$: |
       .data-entry { flex-direction: column !important; }
       .key {
         font-size: var(--h6-font-size);
@@ -510,22 +581,21 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         margin-bottom: 16px;
         max-width: none !important;
       }
+      .data-entry:last-child .value {
+        margin-bottom: 0;
+      }      
     ha-more-info-history$state-history-charts:
       $:
         state-history-chart-timeline$: |
           .chartTooltip {
             margin-top: -200px;
           }
-    ha-more-info-history:
+    ha-more-info-info:
       $:
-        state-history-charts:
-          $:
-            state-history-chart-line:
-              $:
-                ha-chart-base:
-                  $: |
-                    .chartContainer {
-                      filter: hue-rotate(var(--hue-primary-color)) saturate(3) brightness(0.66)
+        ha-more-info-history:
+          $: |
+            state-history-charts, statistics-chart {
+              filter: hue-rotate(calc(var(--hue-primary-color) - 212deg)) saturate(3) brightness(0.66)
                     }
 
   card-mod-root-yaml: &card-mod-root |
@@ -598,14 +668,19 @@ ________________________________________Common Base 4 (Do Not Use):
       primary-background-color: "rgb(0,0,0)"
       rgb-primary-background-color: "0,0,0"
       secondary-background-color: "rgb(24,24,24)"
-      card-background-color: "rgba(255,255,255,.075)"
-      rgb-card-background-color: "255,255,255"
+      rgb-secondary-background-color: "24,24,24"
+      card-background-color: "rgb(19,19,19)"
+      rgb-card-background-color: "19,19,19"
 
       ha-card-border-radius: 0
       ha-config-card-border-radius: 0
       ha-dialog-border-radius: 0
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 0px
+      mdc-shape-small: 0
+
+      mdc-button-raised-box-shadow: none
+      mdc-button-raised-box-shadow-hover: none
 
       mdc-theme-surface: "rgb(24,24,24)"
       rgb-mdc-theme-surface: "24,24,24"
@@ -615,14 +690,19 @@ ________________________________________Common Base 4 (Do Not Use):
       primary-background-color: "rgb(255,255,255)"
       rgb-primary-background-color: "255,255,255"
       secondary-background-color: "rgb(232,232,232)"
-      card-background-color: "rgba(0,0,0,.033)"
-      rgb-card-background-color: "0,0,0"
+      rgb-secondary-background-color: "232,232,232"
+      card-background-color: "rgba(247,247,247)"
+      rgb-card-background-color: "247,247,247"
 
       ha-card-border-radius: 0
       ha-config-card-border-radius: 0
       ha-dialog-border-radius: 0
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 0px
+      mdc-shape-small: 0
+
+      mdc-button-raised-box-shadow: none
+      mdc-button-raised-box-shadow-hover: none
 
       mdc-theme-surface: var(--primary-background-color)
       rgb-mdc-theme-surface: var(--rgb-primary-background-color)
@@ -641,6 +721,7 @@ ________________________________________Common Base 5 (Do Not Use):
       ha-dialog-border-radius: "8px"
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 4px      
+      mdc-shape-small: 4px
 
       mdc-theme-surface: var(--primary-background-color)
       rgb-mdc-theme-surface: var(--rgb-primary-background-color)
@@ -655,6 +736,7 @@ ________________________________________Common Base 5 (Do Not Use):
       ha-dialog-border-radius: "8px"
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 4px
+      mdc-shape-small: 4px
 
       mdc-theme-surface: var(--card-background-color)
       rgb-mdc-theme-surface: var(--rgb-card-background-color)
@@ -709,12 +791,14 @@ Fluent Red:
       primary-background-color: "rgb(27,24,25)"
       rgb-primary-background-color: "27,24,25"
       secondary-background-color: "rgb(67,61,63)"
+      rgb-secondary-background-color: "67,61,63"
       card-background-color: "rgb(40,36,38)"
       rgb-card-background-color: "40,36,38"
 
     light:
       <<: *fluent-common-light
       secondary-background-color: "rgb(249,210,226)"
+      rgb-secondary-background-color: "249,210,226"
       card-background-color: "rgb(245,239,242)"
       rgb-card-background-color: "245,239,242"
 
@@ -758,12 +842,14 @@ Fluent Blue:
       primary-background-color: "rgb(24,26,27)"
       rgb-primary-background-color: "24,26,27"
       secondary-background-color: "rgb(57,64,70)"
+      rgb-secondary-background-color: "57,64,70"
       card-background-color: "rgb(36,38,40)"
       rgb-card-background-color: "36,38,40"
 
     light: 
       <<: *fluent-common-light
       secondary-background-color: "rgb(210,231,249)"
+      rgb-secondary-background-color: "210,231,249"
       card-background-color: "rgb(239,243,245)"
       rgb-card-background-color: "239,243,245"
 
@@ -807,12 +893,14 @@ Fluent Green:
       primary-background-color: "rgb(24,27,26)"
       rgb-primary-background-color: "24,27,26"
       secondary-background-color: "rgb(57,70,64)"
+      rgb-secondary-background-color: "57,70,64"
       card-background-color: "rgb(36,40,38)"
       rgb-card-background-color: "36,40,38"
 
     light: 
       <<: *fluent-common-light
       secondary-background-color: "rgb(210,249,231)"
+      rgb-secondary-background-color: "210,249,231"
       card-background-color: "rgb(239,245,243)"
       rgb-card-background-color: "239,245,243"
 
@@ -856,12 +944,14 @@ Fluent Orange:
       primary-background-color: "rgb(27,26,24)"
       rgb-primary-background-color: "27,26,24"
       secondary-background-color: "rgb(70,64,57)"
+      rgb-secondary-background-color: "70,64,57"
       card-background-color: "rgb(40,38,36)"
       rgb-card-background-color: "40,38,36"
 
     light: 
       <<: *fluent-common-light
       secondary-background-color: "rgb(249,231,210)"
+      rgb-secondary-background-color: "249,231,210"
       card-background-color: "rgb(245,243,239)"
       rgb-card-background-color: "245,243,239"
 
@@ -905,12 +995,14 @@ Fluent Purple:
       primary-background-color: "rgb(26,24,27)" # hsl(hue,5,10)
       rgb-primary-background-color: "26,24,27"
       secondary-background-color: "rgb(64,57,70)" # hsl(hue,10,25)
+      rgb-secondary-background-color: "64,57,70"
       card-background-color: "rgb(38,36,40)" # hsl(hue,5,15)
       rgb-card-background-color: "38,36,40"
 
     light: 
       <<: *fluent-common-light
       secondary-background-color: "rgb(230,210,249)" # hsl(hue,75,90)
+      rgb-secondary-background-color: "230,210,249"
       card-background-color: "rgb(242,239,245)" # hsl(hue,25,95)
       rgb-card-background-color: "242,239,245"
 
@@ -957,12 +1049,14 @@ Fluent Slate:
       primary-background-color: "rgb(24,25,27)"
       rgb-primary-background-color: "24,25,27"
       secondary-background-color: "rgb(57,63,70)"
+      rgb-secondary-background-color: "57,63,70"
       card-background-color: "rgb(36,38,40)"
       rgb-card-background-color: "36,38,40"
 
     light:
       <<: *fluent-common-light
       secondary-background-color: "rgb(223,229,236)"
+      rgb-secondary-background-color: "223,229,236"
       card-background-color: "rgb(240,242,244)"
       rgb-card-background-color: "240,242,244"
 
