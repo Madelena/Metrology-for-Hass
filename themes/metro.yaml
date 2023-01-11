@@ -415,26 +415,30 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         padding-top: 4px;
         padding-bottom: 4px;
       }
-      .info, .info > * {
+      .info,
+      .info > * {
         white-space: normal !important;
       }
       .secondary {
         font-size: var(--small-font-size);
         line-height: 1.4;
       }
-      .state, .entity div {
+      .state,
+      .entity div {
         font-size: var(--h5-font-size);
         font-weight: 400;
       }
     hui-generic-entity-row$: |
-      .info, .info > * {
+      .info,
+      .info > * {
         white-space: normal !important;
       }
       .secondary {
         font-size: var(--small-font-size);
         line-height: 1.4;
       }                  
-      .state, .entity div {
+      .state,
+      .entity div {
         font-size: var(--h5-font-size);
         font-weight: 400;
       }
@@ -471,30 +475,43 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         color: var(--secondary-text-color);
         text-transform: uppercase;
       }
-      .card-header, .card-header .name, :host ::slotted(.card-header), ha-card.type-area .name, ha-card.type-picture-entity .footer.single, ha-card.type-media-control hui-marquee {
+      .card-header,
+      .card-header .name,
+      :host ::slotted(.card-header),
+      ha-card.type-picture-entity .footer.single,
+      ha-card.type-media-control hui-marquee {
         font-size: var(--card-title-font-size) !important;
         line-height: var(--card-title-line-height) !important;
         font-weight: var(--card-title-font-weight) !important;
         letter-spacing: 0;
       }
-      .card-header, :host ::slotted(.card-header) {
+      .card-header,
+      :host ::slotted(.card-header) {
         margin-bottom: 8px;
         padding: 12px 16px;
       }
-      :host ::slotted(.card-content:not(:first-child)), slot:not(:first-child)::slotted(.card-content) {
+      :host ::slotted(.card-content:not(:first-child)),
+      slot:not(:first-child)::slotted(.card-content) {
         margin-top: 0;
       }
       .entities {
         align-items: flex-start !important;
       }
-      ha-card.type-button.tile, ha-card.type-entity.tile, ha-card.type-light.tile, ha-card.type-thermostat.tile, ha-card.type-gauge.tile, :host([narrow]) ha-card.type-weather-forecast.tile {
+      ha-card.type-button.tile,
+      ha-card.type-entity.tile,
+      ha-card.type-light.tile,
+      ha-card.type-thermostat.tile,
+      ha-card.type-gauge.tile,
+      :host([narrow]) ha-card.type-weather-forecast.tile {
         aspect-ratio: 1;
       }
-      ha-card.type-button.tile.wide, ha-card.type-entity.tile.wide, ha-card.type-light.tile.wide, ha-card.type-thermostat.tile.wide, ha-card.type-gauge.tile.wide, :host([narrow]) ha-card.type-weather-forecast.tile.wide {
+      ha-card.type-button.tile.wide,
+      ha-card.type-entity.tile.wide,
+      ha-card.type-light.tile.wide,
+      ha-card.type-thermostat.tile.wide,
+      ha-card.type-gauge.tile.wide,
+      :host([narrow]) ha-card.type-weather-forecast.tile.wide {
         aspect-ratio: 2;
-      }
-      ha-card.type-area: {
-        padding-bottom: 100%;
       }
       ha-card.type-button.tile:has(ha-state-icon[data-state="on"]) {
         background: var(--primary-color);
@@ -515,7 +532,10 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         padding: 12px;
         width: 33%;
       }
-      ha-card.type-button.tile ha-state-icon + span, ha-card.type-light.tile #info, ha-card.type-thermostat.tile #info, ha-card.type-gauge.tile .name {
+      ha-card.type-button.tile ha-state-icon + span,
+      ha-card.type-light.tile #info,
+      ha-card.type-thermostat.tile #info,
+      ha-card.type-gauge.tile .name {
         font-size: var(--body-font-size);
         position: absolute;
         bottom: 0;
@@ -554,7 +574,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         position: absolute;
         right: 12px;
       }
-      ha-card.type-light.tile #slider, ha-card.type-thermostat.tile #slider {
+      ha-card.type-light.tile #slider,
+      ha-card.type-thermostat.tile #slider {
         max-width: inherit !important;
         min-width: inherit !important;
       }
@@ -574,7 +595,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       ha-card.type-thermostat.tile #info #modes {
         text-align: center;
       }
-      ha-card.type-thermostat.tile #slider-center #temperature text, ha-card.type-gauge.tile .value-text {
+      ha-card.type-thermostat.tile #slider-center #temperature text,
+      ha-card.type-gauge.tile .value-text {
         font-weight: 100;
       }
       ha-card.type-area .bottom {
@@ -662,7 +684,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       ha-card.type-weather-forecast.tile .info {
         padding-top: 0;
       }
-      ha-card.type-weather-forecast.tile .state, ha-card.type-weather-forecast.tile .temp-attribute .temp {
+      ha-card.type-weather-forecast.tile .state,
+      ha-card.type-weather-forecast.tile .temp-attribute .temp {
         font-size: var(--h1-font-size);
         line-height: 1.4;
         font-weight: var(--h1-font-weight);
@@ -699,7 +722,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         color: var(--secondary-text-color);
         top: auto;
       }
-      ha-card.type-weather-forecast.tile .name, ha-card.type-weather-forecast.tile .attribute {
+      ha-card.type-weather-forecast.tile .name,
+      ha-card.type-weather-forecast.tile .attribute {
         font-size: var(--body-font-size) !important;
         line-height: var(--body-line-height);
       }
@@ -707,7 +731,11 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         background: none;
       }
     $: |
-      .card-header, .card-header .name, :host ::slotted(.card-header), ha-card.type-area .name, ha-card.type-picture-entity .footer {
+      .card-header,
+      .card-header .name,
+      :host ::slotted(.card-header),
+      ha-card.type-area .name,
+      ha-card.type-picture-entity .footer {
         font-size: var(--card-title-font-size) !important;
         line-height: var(--card-title-line-height) !important;
         font-weight: var(--card-title-font-weight) !important;
@@ -749,7 +777,9 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         width: 8px;
       }
     ha-gauge$: |
-      .dial, .value {
+      .dial,
+      .value,
+      .level {
         stroke-width: 4 !important;
       }
       .dial {
@@ -836,7 +866,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         background: none !important;
       }
     .: |
-      .mdc-top-app-bar__title, .main-title {
+      .mdc-top-app-bar__title,
+      .main-title {
         text-transform: uppercase;
         font-size: var(--body-font-size);
         font-weight: 600;
@@ -902,14 +933,16 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       $:
         ha-more-info-history:
           $: |
-            state-history-charts, statistics-chart {
+            state-history-charts,
+            statistics-chart {
               filter: hue-rotate(calc(var(--hue-primary-color) - 212deg)) saturate(3) brightness(0.66)
             }
 
   card-mod-root-yaml: &card-mod-root |
     .: |
       @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-        app-header, app-toolbar {
+        app-header,
+        app-toolbar {
           background-color: "rgba(var(--rgb-primary-background-color),.33)"
           backdrop-filter: blur(8px);
           -webkit-backdrop-filter: blur(8px);
@@ -1028,7 +1061,7 @@ ________________________________________Common Base 5 (Do Not Use):
       ha-config-card-border-radius: "4px"
       ha-dialog-border-radius: "8px"
       vertical-stack-card-margin: "1px 0px 1px 0px"
-      mush-control-border-radius: 4px      
+      mush-control-border-radius: 4px
       mdc-shape-small: 4px
 
       mdc-theme-surface: var(--primary-background-color)
