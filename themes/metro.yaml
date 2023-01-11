@@ -677,6 +677,7 @@ ________________________________________Common Base 4 (Do Not Use):
       ha-dialog-border-radius: 0
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 0px
+      mdc-shape-small: 0
 
       mdc-button-raised-box-shadow: none
       mdc-button-raised-box-shadow-hover: none
@@ -698,6 +699,7 @@ ________________________________________Common Base 4 (Do Not Use):
       ha-dialog-border-radius: 0
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 0px
+      mdc-shape-small: 0
 
       mdc-button-raised-box-shadow: none
       mdc-button-raised-box-shadow-hover: none
