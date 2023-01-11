@@ -160,7 +160,6 @@ ________________________________________Common Base (Do Not Use): &common-colors
 
   mdc-icon-size: 24px
   header-height: 56px
-  mdc-shape-small: 0
 
   expansion-panel-summary-padding: 0
   expansion-panel-content-padding: 0
@@ -825,7 +824,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
           background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
         }
       }
-      .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
+      .mdc-dialog .mdc-dialog__container .mdc-dialog__surface,
+      .mdc-dialog .mdc-dialog__content {
         overflow: visible;
       }
       .mdc-dialog__surface {
@@ -985,6 +985,7 @@ ________________________________________Common Base 4 (Do Not Use):
       ha-dialog-border-radius: 0
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 0px
+      mdc-shape-small: 0
 
       mdc-button-raised-box-shadow: none
       mdc-button-raised-box-shadow-hover: none
@@ -1006,6 +1007,7 @@ ________________________________________Common Base 4 (Do Not Use):
       ha-dialog-border-radius: 0
       vertical-stack-card-margin: "1px 0px 1px 0px"
       mush-control-border-radius: 0px
+      mdc-shape-small: 0
 
       mdc-button-raised-box-shadow: none
       mdc-button-raised-box-shadow-hover: none
