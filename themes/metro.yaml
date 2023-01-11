@@ -553,13 +553,16 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       }
       ha-card.type-entity.tile .header {
         position: absolute;
-        padding: 8px 16px 12px;
+        padding: 8px 8px 12px 12px;
         bottom: 0;
-        width: calc(100% - 24px);
+        width: calc(100% - 20px);
+      }
+      ha-card.type-entity.tile .header .icon {
+        align-self: flex-end;
       }
       ha-card.type-entity.tile .info {
         order: 3;
-        padding-top: 12px;
+        padding: 10px 12px !important;
         margin-top: 0;
       }
       ha-card.type-entity.tile:not(.large) .value {
@@ -729,6 +732,12 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       }
       ha-card.type-markdown.header {
         background: none;
+      }
+      ha-markdown {
+        padding: 0 12px 16px !important;
+      }
+      ha-markdown.no-header {
+        padding: 16px 12px !important;
       }
     $: |
       .card-header,
