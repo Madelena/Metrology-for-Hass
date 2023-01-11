@@ -516,7 +516,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
           background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
         }
       }
-      .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
+      .mdc-dialog .mdc-dialog__container .mdc-dialog__surface,
+      .mdc-dialog .mdc-dialog__content {
         overflow: visible;
       }
       .mdc-dialog__surface {
