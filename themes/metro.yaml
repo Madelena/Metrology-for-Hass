@@ -904,7 +904,9 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       .layout.horizontal {
         flex-direction: column-reverse !important;
       }
-      state-info { margin-left: -8px; margin-top: -42px; }
+      state-info {
+        margin-left: -8px; margin-top: -42px;
+      }
     ha-more-info-info$state-card-display$state-info$: |
       .name { display: none; }
       .time-ago { margin-top: 42px; 
