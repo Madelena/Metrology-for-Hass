@@ -620,7 +620,7 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         text-align: left;
         top: 0;
         bottom: auto;
-        padding: 12px 16px 48px;
+        padding: 12px 12px 48px;
         font-size: var(--body-font-size);
       }
       ha-card.type-picture-entity .footer.both {
@@ -633,12 +633,14 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         line-height: 1.4 !important;
       }
       ha-card.type-picture-glance .box {
-        padding: 16px;
+        padding: 12px;
         background: linear-gradient(to top, rgba(var(--rgb-primary-background-color),.75), transparent);
       }
       ha-card.type-picture-glance .title {
         font-size: var(--body-font-size);
         font-weight: var(--body-font-weight);
+        line-height: var(--body-line-height);
+        align-self: self-end;
         margin-left: 0;
       }
       ha-card.type-picture-glance .row:nth-child(3) {
