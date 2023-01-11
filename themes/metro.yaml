@@ -459,6 +459,9 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         font-weight: var(--body-font-weight);
         color: var(--primary-text-color);
       }
+      ha-card.tile .name {
+        white-space: normal;
+      }
       ha-card .info {
         line-height: 32px;
         padding-top: 8px;
