@@ -646,6 +646,24 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       ha-control-slider {
         --control-slider-border-radius: var(--ha-card-border-radius);
       }
+    ha-more-info-info$more-info-person$ha-attributes$: |
+      .data-entry { flex-direction: column !important; }
+      .key {
+        font-size: var(--h6-font-size);
+        text-transform: uppercase;
+        line-height: 1.1;
+      }
+      .data-entry .value {
+        text-align: left !important;
+        font-size: var(--h2-font-size);
+        font-weight: var(--h2-font-weight);
+        line-height: 1.1;
+        margin-bottom: 16px;
+        max-width: none !important;
+      }
+      .data-entry:last-child .value {
+        margin-bottom: 0;
+      }      
     ha-more-info-history$state-history-charts:
       $:
         state-history-chart-timeline$: |
