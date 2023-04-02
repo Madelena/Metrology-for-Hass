@@ -208,7 +208,7 @@ ________________________________________Common Base (Do Not Use): &common-colors
 
   # Cards
   paper-dialog-background-color: var(--card-background-color)
-  paper-listbox-background-color: var(--secondary-background-color)
+  paper-listbox-background-color: var(--card-background-color)
   paper-card-background-color: var(--card-background-color)
 
   # Switches
