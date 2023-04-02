@@ -86,7 +86,7 @@ ________________________________________Common Base (Do Not Use): &common-colors
   card-title-line-height: normal
   title-font-size: 3.5rem
   title-font-weight: 600
-  title-line-height: normal
+  title-line-height: 1.1
   subtitle-font-size: 1rem
   subtitle-font-weight: 600
   subtitle-line-height: normal
