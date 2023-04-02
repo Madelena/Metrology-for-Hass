@@ -416,26 +416,30 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         padding-top: 4px;
         padding-bottom: 4px;
       }
-      .info, .info > * {
+      .info,
+      .info > * {
         white-space: normal !important;
       }
       .secondary {
         font-size: var(--small-font-size);
         line-height: 1.4;
       }
-      .state, .entity div {
+      .state,
+      .entity div {
         font-size: var(--h5-font-size);
         font-weight: 400;
       }
     hui-generic-entity-row$: |
-      .info, .info > * {
+      .info,
+      .info > * {
         white-space: normal !important;
       }
       .secondary {
         font-size: var(--small-font-size);
         line-height: 1.4;
       }                  
-      .state, .entity div {
+      .state,
+      .entity div {
         font-size: var(--h5-font-size);
         font-weight: 400;
       }
@@ -540,7 +544,8 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
         background: none !important;
       }
     .: |
-      .mdc-top-app-bar__title, .main-title {
+      .mdc-top-app-bar__title,
+      .main-title {
         text-transform: uppercase;
         font-size: var(--body-font-size);
         font-weight: 600;
@@ -566,7 +571,9 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       .layout.horizontal {
         flex-direction: column-reverse !important;
       }
-      state-info { margin-left: -8px; margin-top: -42px; }
+      state-info {
+        margin-left: -8px; margin-top: -42px;
+      }
     ha-more-info-info$state-card-display$state-info$: |
       .name { display: none; }
       .time-ago { margin-top: 42px; 
@@ -609,14 +616,16 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       $:
         ha-more-info-history:
           $: |
-            state-history-charts, statistics-chart {
+            state-history-charts,
+            statistics-chart {
               filter: hue-rotate(calc(var(--hue-primary-color) - 212deg)) saturate(3) brightness(0.66)
-                    }
+            }
 
   card-mod-root-yaml: &card-mod-root |
     .: |
       @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-        app-header, app-toolbar {
+        app-header,
+        app-toolbar {
           background-color: "rgba(var(--rgb-primary-background-color),.33)"
           backdrop-filter: blur(8px);
           -webkit-backdrop-filter: blur(8px);
@@ -735,7 +744,7 @@ ________________________________________Common Base 5 (Do Not Use):
       ha-config-card-border-radius: "4px"
       ha-dialog-border-radius: "8px"
       vertical-stack-card-margin: "1px 0px 1px 0px"
-      mush-control-border-radius: 4px      
+      mush-control-border-radius: 4px
       mdc-shape-small: 4px
 
       mdc-theme-surface: var(--primary-background-color)
