@@ -366,7 +366,7 @@ ________________________________________Common Base 2 (Do Not Use):
       mdc-dialog-scrim-color: "rgba(0, 0, 0, 0.5)"
       dialog-backdrop-filter: none
       dialog-box-shadow: var(--rgb-accent-color)
-      slider-thumb-color: "#121212"
+      slider-thumb-color: var(--ha-card-background)
 
       sidebar-icon-color: var(--secondary-text-color)
       sidebar-background-color: var(--secondary-background-color)
@@ -393,7 +393,7 @@ ________________________________________Common Base 2 (Do Not Use):
       mdc-dialog-scrim-color: rgba(var(--rgb-primary-background-color),.667)
       dialog-backdrop-filter: none
       dialog-box-shadow: var(--rgb-primary-text-color)
-      slider-thumb-color: "#E8E8E8"
+      slider-thumb-color: var(--ha-card-background)
 
       sidebar-icon-color: rgba(0,0,0,.5)
       sidebar-background-color: var(--primary-background-color)
