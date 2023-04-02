@@ -768,7 +768,7 @@ ________________________________________Common Base 5 (Do Not Use):
 # It's relatively easy to create your own theme. You just need to provide the colors.
 
 
-Metro Red:
+Metro Red: &metro-red
   <<: *common-card-mods
   card-mod-theme: "Metro Red"
 
@@ -788,17 +788,8 @@ Metro Red:
       <<: *metro-common-light
 
 Fluent Red:
-  <<: *common-card-mods
+  <<: *metro-red
   card-mod-theme: "Fluent Red"
-
-  primary-color: "#C30052"
-  rgb-primary-color: "195,0,82"
-  rgb-primary-color-darker: "144, 0, 60"
-  rgb-primary-color-lighter: "233, 0, 98"
-  hue-primary-color: "335deg"
-
-  accent-color: "#e90062"
-  rgb-accent-color: "233, 0, 98"
 
   modes:
     dark:
@@ -819,7 +810,7 @@ Fluent Red:
 
 
 
-Metro Blue:
+Metro Blue: &metro-blue
   <<: *common-card-mods
   card-mod-theme: "Metro Blue"
 
@@ -839,17 +830,8 @@ Metro Blue:
       <<: *metro-common-light
 
 Fluent Blue:
-  <<: *common-card-mods
+  <<: *metro-blue
   card-mod-theme: "Fluent Blue"
-
-  primary-color: "#0078d7"
-  rgb-primary-color: "0,120,215"
-  rgb-primary-color-darker: "0,91,163"
-  rgb-primary-color-lighter: "0,141,253"
-  hue-primary-color: "207deg"
-
-  accent-color: "#008dfd"
-  rgb-accent-color: "0,141,253"
 
   modes:
     dark: 
@@ -870,7 +852,7 @@ Fluent Blue:
 
 
 
-Metro Green:
+Metro Green: &metro-green
   <<: *common-card-mods
   card-mod-theme: "Metro Green"
 
@@ -890,17 +872,8 @@ Metro Green:
       <<: *metro-common-light
 
 Fluent Green:
-  <<: *common-card-mods
+  <<: *metro-green
   card-mod-theme: "Fluent Green"
-
-  primary-color: "#00cb6a"
-  rgb-primary-color: "0, 203, 106"
-  rgb-primary-color-darker: "0, 151, 79"
-  rgb-primary-color-lighter: "0, 241, 125"
-  hue-primary-color: "151deg"
-
-  accent-color: "#00f17d"
-  rgb-accent-color: "0, 241, 125"
 
   modes:
     dark: 
@@ -921,7 +894,7 @@ Fluent Green:
 
 
 
-Metro Orange:
+Metro Orange: &metro-orange
   <<: *common-card-mods
   card-mod-theme: "Metro Orange"
 
@@ -941,17 +914,8 @@ Metro Orange:
       <<: *metro-common-light
 
 Fluent Orange:
-  <<: *common-card-mods
+  <<: *metro-orange
   card-mod-theme: "Fluent Orange"
-
-  primary-color: "#ff8c00"
-  rgb-primary-color: "255, 140, 0"
-  rgb-primary-color-darker: "204, 112, 0"
-  rgb-primary-color-lighter: "255, 157, 0"
-  hue-primary-color: "33deg"
-
-  accent-color: "#ff9d00"
-  rgb-accent-color: "255, 157, 0"
 
   modes:
     dark: 
@@ -972,7 +936,7 @@ Fluent Orange:
 
 
 
-Metro Purple:
+Metro Purple: &metro-purple
   <<: *common-card-mods
   card-mod-theme: "Metro Purple"
 
@@ -992,17 +956,8 @@ Metro Purple:
       <<: *metro-common-light
 
 Fluent Purple:
-  <<: *common-card-mods
+  <<: *metro-purple
   card-mod-theme: "Fluent Purple"
-
-  primary-color: "#6a00cb"
-  rgb-primary-color: "106, 0, 203" # hsl(hue,100,42)
-  rgb-primary-color-darker: "105, 0, 204" # hsl(hue,100,32)
-  rgb-primary-color-lighter: "169, 77, 255" # hsl(hue,100,50)
-  hue-primary-color: "271deg"
-
-  accent-color: "#A94DFF"
-  rgb-accent-color: "169, 77, 255"
 
   modes:
     dark: 
@@ -1025,7 +980,7 @@ Fluent Purple:
 
 # Use the following as the template for your custom color theme.
 
-Metro Slate:
+Metro Slate: &metro-slate
   <<: *common-card-mods
   card-mod-theme: "Metro Slate"
 
@@ -1046,17 +1001,8 @@ Metro Slate:
 
 
 Fluent Slate:
-  <<: *common-card-mods
+  <<: *metro-slate
   card-mod-theme: "Fluent Slate"
-
-  primary-color: "#4f5a68"
-  rgb-primary-color: "79,90,104"
-  rgb-primary-color-darker: "57,65,76"
-  rgb-primary-color-lighter: "101,115,134"
-  hue-primary-color: "214deg"
-
-  accent-color: "#677385"
-  rgb-accent-color: "101,115,134"
 
   modes:
     dark:
