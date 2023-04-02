@@ -370,8 +370,8 @@ ________________________________________Common Base 2 (Do Not Use):
       rgb-disabled-text-color: "140,140,140"
 
       # Other Mode Specific Variables
-      mdc-dialog-scrim-color: "rgba(0, 0, 0, 0.5)"
-      dialog-backdrop-filter: none
+      mdc-dialog-scrim-color: "rgba(var(--rgb-primary-background-color), 0.5)"
+      dialog-backdrop-filter: blur(16px)
       dialog-box-shadow: var(--rgb-accent-color)
       slider-thumb-color: var(--ha-card-background)
 
@@ -397,8 +397,8 @@ ________________________________________Common Base 2 (Do Not Use):
       rgb-disabled-text-color: "152,152,152"
 
       # Other Mode Specific Variables
-      mdc-dialog-scrim-color: rgba(var(--rgb-primary-background-color),.667)
-      dialog-backdrop-filter: none
+      mdc-dialog-scrim-color: rgba(var(--rgb-primary-background-color),.67)
+      dialog-backdrop-filter: blur(16px)
       dialog-box-shadow: var(--rgb-primary-text-color)
       slider-thumb-color: var(--ha-card-background)
 
@@ -523,25 +523,14 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
     $: |
       @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
         .mdc-dialog__surface {
-          backdrop-filter: blur(16px);
-          -webkit-backdrop-filter: blur(16px);
+          xbackdrop-filter: blur(16px);
+          x-webkit-backdrop-filter: blur(16px);
           background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
         }
       }
-      .mdc-dialog .mdc-dialog__container .mdc-dialog__surface,
-      .mdc-dialog .mdc-dialog__content {
+      x.mdc-dialog .mdc-dialog__container .mdc-dialog__surface,
+      x.mdc-dialog .mdc-dialog__content {
         overflow: visible;
-      }
-      .mdc-dialog__surface {
-        box-shadow: 0 0px 16px 4px rgba(var(--dialog-box-shadow), .15), 0 16px 64px 32px rgba(var(--dialog-box-shadow), .5) !important;
-      }
-    ha-dialog$: |
-      @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-        .mdc-dialog__surface {
-          backdrop-filter: blur(16px);
-          -webkit-backdrop-filter: blur(16px);
-          background-color: rgba(var(--rgb-mdc-theme-surface), .5) !important;
-        }
       }
       .mdc-dialog__surface {
         box-shadow: 0 0px 16px 4px rgba(var(--dialog-box-shadow), .15), 0 16px 64px 32px rgba(var(--dialog-box-shadow), .5) !important;
@@ -563,9 +552,6 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       }
       .content {
         xmargin-top: -8px;
-      }
-      ha-dialog {
-        --dialog-box-shadow: inherit !important;
       }
     ha-more-info-info$state-card-display$: |
       .state {
