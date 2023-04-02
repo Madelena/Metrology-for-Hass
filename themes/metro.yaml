@@ -613,8 +613,9 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       }
     ha-more-info-info$more-info-switch$ha-more-info-toggle$: |
       ha-control-switch {
-        --control-switch-border-radius: var(--ha-card-border-radius);
-        --control-switch-padding: 4px
+        --control-switch-border-radius: var(--ha-card-border-radius) !important;
+        --control-switch-padding: 4px !important;
+        --control-switch-background-opacity: 1 !important;
       }
     ha-more-info-info$more-info-light$ha-more-info-state-header$: |
       .name {
@@ -630,7 +631,10 @@ ________________________________________Common Base 3 (Do Not Use): &common-card
       }
     ha-more-info-info$more-info-light$ha-more-info-light-brightness$: |
       ha-control-slider {
-        --control-slider-border-radius: var(--ha-card-border-radius);
+        --control-slider-border-radius: var(--ha-card-border-radius) !important;
+        --control-slider-background: var(--secondary-background-color) !important;
+        --control-slider-background-opacity: 1 !important;
+      }
       }
     ha-more-info-info$more-info-light$ha-attributes$: |
       .data-entry { flex-direction: column !important; }
